@@ -1,0 +1,11 @@
+---
+layout: none
+---
+CACHE MANIFEST
+# {{ site.time }}
+CACHE:
+/bootstrap/css/*.css
+/bootstrap/js/*.js
+/bootstrap/img/*.png
+/css/*.css
+http://code.jquery.com/jquery.js
