@@ -1,0 +1,25 @@
+name: DICOMO2014 Mobile
+permalink: /:categories/:title
+#markdown: redcarpet
+markdown: kramdown
+pygments: true
+lsi: false
+encoding: utf-8
+author:
+  name: DICOMO2014
+  email: dicomo2014-inquiry@dicomo.org
+
+production_url: http://dicomo2014.github.io
+
+# navigation bar settings
+
+navigation:
+- text: Home
+  url: /
+  icon: icon-home
+- text: About
+  url: /about.html
+- text: Program
+  url: /program.html
+- text: Sessions
+  url: /session.html
