@@ -4,11 +4,11 @@ layout: none
 CACHE MANIFEST
 # {{ site.time }}
 CACHE:
-/bootstrap/css/bootstrap.min.css
-/bootstrap/css/bootstrap-responsive.min.css
-/bootstrap/js/bootstrap.min.js
-/bootstrap/img/glyphicons-halflings.png
-/bootstrap/img/glyphicons-halflings-white.png
 /css/main.css
 /css/syntax.css
-http://code.jquery.com/jquery.js
+http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css
+http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css
+http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css
+http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js
+http://netdna.bootstrapcdn.com/bootstrap/3.1.1/fonts/glyphicons-halflings-regular.woff
+https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js

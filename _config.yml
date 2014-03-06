@@ -9,14 +9,14 @@ author:
   name: DICOMO2014
   email: dicomo2014-inquiry@dicomo.org
 
-production_url: http://dicomo2014.github.io
+site_url: http://dicomo2014.github.io
 
 # navigation bar settings
 
 navigation:
-- text: Home
+- text: DICOMO2014 Mobile
   url: /
-  icon: icon-home
+  icon: home
 - text: About
   url: /about.html
 - text: Program
