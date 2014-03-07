@@ -9,7 +9,7 @@ title: 参加者
 {% for member in site.data.members %}
 <div data-role="collapsible">
 <h2 id="{{ member.id }}">{{ member.id }} : {{ member.name }}</h2>
-<a data-ajax="false" name="{{ member.id }}"></a>
+<a name="{{ member.id }}"></a>
 <ul>
 {% if member.org %}
   <li>所属: {{ member.org }}</li>

@@ -35,9 +35,9 @@
             {% else %}
                 <li>
                     {% if link.icon %}
-<a href="{{ link_url }}" class="{{ current }}" data-icon="{{ link.icon }}" data-iconpos="left">
+<a href="{{ link_url }}" class="{{ current }}" data-icon="{{ link.icon }}" data-iconpos="left" data-ajax="false">
                     {% else %}
-<a href="{{ link_url }}" class="{{ current }}">
+<a href="{{ link_url }}" class="{{ current }}" data-ajax="false">
                     {% endif %}
                     {{ link.text }}
                 </a></li>
