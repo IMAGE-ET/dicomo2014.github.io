@@ -1,0 +1,25 @@
+---
+layout: default
+title: 参加者
+---
+<form>
+  <input type="text" data-type="search" id="filterable-input" />
+</form>
+<div data-filter="true" data-input="#filterable-input">
+{% for member in site.data.members %}
+<div data-role="collapsible">
+<h2 id="{{ member.id }}">{{ member.id }} : {{ member.name }}</h2>
+<ul>
+{% if member.org %}
+  <li>所属: {{ member.org }}</li>
+{% endif %}
+{% if member.twitter %}
+  <li>Twitter: <a href="http://twitter.com/{{ member.twitter }}">@{{ member.twitter }}</a></li>
+{% endif %}
+{% if member.url %}
+  <li><a href="{{ member.url }}" data-icon="home">{{ member.url }}</a></li>
+{% endif %}
+</ul>
+</div>
+{% endfor %}
+</div>
