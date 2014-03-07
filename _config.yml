@@ -17,8 +17,8 @@ navigation:
 - text: DICOMO2014 Mobile
   url: /
   icon: home
-- text: Schedule
-  url: /schedule/
+- text: Program
+  url: /program/
   icon: clock
 - text: Sessions
   url: /session/
