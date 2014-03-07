@@ -13,5 +13,7 @@ CACHE MANIFEST
 //ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js
 //ajax.googleapis.com/ajax/libs/jquerymobile/1.4.1/jquery.mobile.min.js
 //ajax.googleapis.com/ajax/libs/jquerymobile/1.4.1/jquery.mobile.min.css
+//ajax.googleapis.com/ajax/libs/jquerymobile/1.4.1/jquery.mobile.min.map
+//ajax.googleapis.com/ajax/libs/jquerymobile/1.4.1/images/ajax-loader.gif
 //cdnjs.cloudflare.com/ajax/libs/fullcalendar/1.6.4/fullcalendar.css
 //cdnjs.cloudflare.com/ajax/libs/fullcalendar/1.6.4/fullcalendar.min.js
