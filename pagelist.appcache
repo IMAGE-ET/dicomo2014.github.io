@@ -3,13 +3,13 @@ layout: none
 ---
 CACHE MANIFEST
 # {{ site.time }}
-/index.html
-/schedule/index.html
-/session/index.html
-/people/index.html
-/access/index.html
+/
+/schedule/
+#/session/
+/people/
+#/access/
 /css/main.css
 /css/syntax.css
-//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js
-//ajax.googleapis.com/ajax/libs/jquerymobile/1.4.1/jquery.mobile.min.js
-//ajax.googleapis.com/ajax/libs/jquerymobile/1.4.1/jquery.mobile.min.css
+http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js
+http://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.1/jquery.mobile.min.js
+http://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.1/jquery.mobile.min.css
