@@ -1,12 +1,12 @@
 name: DICOMO2014 Mobile
-permalink: /:categories/:title
+permalink: /:categories/:title/
 #markdown: redcarpet
 markdown: kramdown
 pygments: true
 lsi: false
 encoding: utf-8
 author:
-  name: DICOMO2014
+  name: DICOMO2014実行委員会
   email: dicomo2014-inquiry@dicomo.org
 
 site_url: http://dicomo2014.github.io
@@ -17,9 +17,15 @@ navigation:
 - text: DICOMO2014 Mobile
   url: /
   icon: home
-- text: About
-  url: /about.html
-- text: Program
-  url: /program.html
+- text: Schedule
+  url: /schedule/
+  icon: clock
 - text: Sessions
-  url: /session.html
+  url: /session/
+  icon: calendar
+- text: People
+  url: /people/
+  icon: user
+- text: Access
+  url: /access/
+  icon: location
