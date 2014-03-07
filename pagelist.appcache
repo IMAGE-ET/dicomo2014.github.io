@@ -3,11 +3,11 @@ layout: none
 ---
 CACHE MANIFEST
 # {{ site.time }}
-CACHE:
-/schedule/
-/session/
-/people/
-/access/
+/index.html
+/schedule/index.html
+/session/index.html
+/people/index.html
+/access/index.html
 /css/main.css
 /css/syntax.css
 //ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js
