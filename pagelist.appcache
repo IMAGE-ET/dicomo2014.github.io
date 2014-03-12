@@ -11,10 +11,9 @@ CACHE MANIFEST
 /access/
 /css/main.css
 /css/syntax.css
-//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js
-//ajax.googleapis.com/ajax/libs/jquerymobile/1.4.1/jquery.mobile.min.js
-//ajax.googleapis.com/ajax/libs/jquerymobile/1.4.1/jquery.mobile.min.css
-//ajax.googleapis.com/ajax/libs/jquerymobile/1.4.1/jquery.mobile.min.map
-//ajax.googleapis.com/ajax/libs/jquerymobile/1.4.1/images/ajax-loader.gif
+https://code.jquery.com/jquery-2.1.0.min.js
+https://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js
+https://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css
+https://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.map
 //cdnjs.cloudflare.com/ajax/libs/fullcalendar/1.6.4/fullcalendar.css
 //cdnjs.cloudflare.com/ajax/libs/fullcalendar/1.6.4/fullcalendar.min.js
