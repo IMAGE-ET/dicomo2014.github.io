@@ -11,8 +11,8 @@ CACHE MANIFEST
 /access/
 /css/main.css
 /css/syntax.css
-https://code.jquery.com/jquery-2.1.0.min.js
-https://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js
-https://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css
+//code.jquery.com/jquery-2.1.0.min.js
+//code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js
+//code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css
 //cdnjs.cloudflare.com/ajax/libs/fullcalendar/1.6.4/fullcalendar.css
 //cdnjs.cloudflare.com/ajax/libs/fullcalendar/1.6.4/fullcalendar.min.js
