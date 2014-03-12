@@ -1,4 +1,4 @@
-<div data-role="navbar">
+<div data-role="navbar" data-iconpos="top">
         <ul>
         {% for link in site.navigation %}
             {% assign current = nil %}
@@ -35,7 +35,7 @@
             {% else %}
                 <li>
                     {% if link.icon %}
-<a href="{{ link_url }}" class="{{ current }}" data-icon="{{ link.icon }}" data-iconpos="left">
+<a href="{{ link_url }}" class="{{ current }}" data-icon="{{ link.icon }}">
                     {% else %}
 <a href="{{ link_url }}" class="{{ current }}">
                     {% endif %}
