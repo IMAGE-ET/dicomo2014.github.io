@@ -11,7 +11,7 @@ CACHE MANIFEST
 /access/
 /css/main.css
 /css/syntax.css
-//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js
+//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js
 //ajax.googleapis.com/ajax/libs/jquerymobile/1.4.1/jquery.mobile.min.js
 //ajax.googleapis.com/ajax/libs/jquerymobile/1.4.1/jquery.mobile.min.css
 //ajax.googleapis.com/ajax/libs/jquerymobile/1.4.1/jquery.mobile.min.map
