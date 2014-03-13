@@ -4,8 +4,8 @@ layout: none
 CACHE MANIFEST
 # {{ site.time }}
 /
+/README.html
 /program/
-#/program/events.json
 /session/
 /people/
 /access/

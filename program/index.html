@@ -1,9 +1,8 @@
 ---
 layout: default
-title: DICOMO2014 Program
+title: Program
 id: program
 ---
-<h1>プログラム</h1>
 <div data-role="navbar" id="program_day">
 <ul>
 {% for date in site.data.days %}
@@ -27,7 +26,6 @@ $(document).ready(function() {
   $("#calendar").fullCalendar({
     events:
 {% include events.json %},
-// { url: "/program/events.json", cache: true },
     defaultView: "agendaDay",
     allDayDefault: false,
     year: {{ first_date.year }},
@@ -35,9 +33,6 @@ $(document).ready(function() {
     date: {{ first_date.day }},
     minTime: "7:00",
     height: 1024,
-    ignoreTimezone: true,
-    startParam: null,
-    endParam: null,
     eventClick: function(event) {
       window.location="/session/#" + event.id;
     }
@@ -45,6 +40,12 @@ $(document).ready(function() {
   // for ajax-loading of jquery mobile
   $("#program").bind('pageshow', function(e) {
     $("#calendar").fullCalendar('render');
+  });
+  $("#program").on("swipeleft", function(event) {
+    $("#calendar").fullCalendar('next');
+  });
+  $("#program").on("swiperight", function(event) {
+    $("#calendar").fullCalendar('prev');
   });
 });
 </script>

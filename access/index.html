@@ -1,5 +1,25 @@
 ---
 layout: default
-title: アクセス
+title: Access
 ---
-<h1>アクセス</h1>
+<ul data-role="listview">
+{% for access in site.data.access %}
+<li>
+{% if access.type == 'map' %}
+<a href="http://maps.google.com/maps?q={{ access.query }}" class="maplink">{{ access.title }}</a>
+{% elsif access.type == 'direction' %}
+<a href="http://maps.google.com/maps?daddr={{ access.dest }}" class="maplink">{{ access.title }}</a>
+{% elsif access.type == 'url' %}
+<a href="{{ access.url }}">{{ access.title }}</a>
+{% endif %}
+</li>
+{% endfor %}
+</ul>
+<script>
+if ((navigator.userAgent.indexOf('iPhone')) > 0) {
+  $(".maplink a").each(function() {
+    var u = $(this).attr('href').replace(/google/g, 'apple');
+    $(this).attr('href',u);
+  });
+};
+</script>
