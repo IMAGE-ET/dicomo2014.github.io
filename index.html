@@ -11,7 +11,7 @@ title: Home
 
 <h2>関連リンク</h2>
 <ul data-role="listview">
-  <li><a href="http://dicomo.org" rel="external">DICOMO 2014公式サイト</a></li>
-  <li><a href="http://www.ipsj.or.jp/" rel="external">情報処理学会</a></li>
-  <li><a href="/README.html">このサイトについて</a></li>
+{% for link in site.data.links %}
+  <li><a href="{{ link.url }}" rel="external" data-role="button"{% if link.icon %} data-icon="{{ link.icon }}" data-iconpos="left"{% endif %}">{{ link.title }}</a></li>
+{% endfor %}
 </ul>

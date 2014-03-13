@@ -1,0 +1,15 @@
+- title: Twitterで#DICOMOを検索
+  url: https://mobile.twitter.com/search?q=%23DICOMO
+  icon: comment
+- title: FacebookのDICOMOページ
+  url: https://m.facebook.com/ipsj.dicomo
+  icon: user
+- title: DICOMO公式サイト
+  url: http://dicomo.org
+  icon: home
+- title: 情報処理学会
+  url: http://www.ipsj.or.jp/
+  icon: action
+- title: このサイトについて
+  url: /README.html
+  icon: info
