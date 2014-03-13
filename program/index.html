@@ -4,13 +4,35 @@ title: DICOMO2014 Program
 id: program
 ---
 <h1>プログラム</h1>
+<div data-role="navbar" id="program_day">
+<ul>
+<li><a href="#" id="program_0709">7/9</a></li>
+<li><a href="#" id="program_0710">7/10</a></li>
+<li><a href="#" id="program_0711">7/11</a></li>
+</ul>
+</div>
 <div id="calendar"></div>
+<script>
+$("#program_0709").on('click',function() {
+  $("#calendar").fullCalendar('gotoDate',2014,6,9);
+});
+$("#program_0710").on('click',function() {
+  $("#calendar").fullCalendar('gotoDate',2014,6,10);
+});
+$("#program_0711").on('click',function() {
+  $("#calendar").fullCalendar('gotoDate',2014,6,11);
+});
+</script>
 <script>
 $(document).ready(function() {
   $("#calendar").fullCalendar({
     events:
-[{ id: "0", title: "keynote", start: "2014-07-09 13:30:00", end: "2014-07-09 15:00:00"},
-{ id: "1", title: "keynote2", start: "2014-07-09 13:30:00", end: "2014-07-09 15:00:00"}],
+[{ title: "開会式", start: "2014-07-09 12:30:00", end: "2014-07-09 13:00:00"},
+//{ title: "休憩", start: "2014-07-09 13:00:00", end: "2014-07-09 13:20:00"},
+{ title: "1A:統一テーマ", start: "2014-07-09 13:20:00", end: "2014-07-09 15:00:00"},
+{ title: "1B", start: "2014-07-09 13:20:00", end: "2014-07-09 15:00:00"},
+{ title: "4A:統一テーマ", start: "2014-07-10 08:30:00", end: "2014-07-09 10:10:00"},
+{ title: "閉会式・表彰式", start: "2014-07-11 13:40:00", end: "2014-07-09 14:40:00"}],
 // { url: "/program/events.json", cache: true },
     defaultView: "agendaDay",
     allDayDefault: false,
