@@ -2,20 +2,16 @@
 layout: default
 title: Home
 ---
-<h1>DICOMO2014 Mobile</h1>
-<p>
-DICOMO2014のスマート端末向けサイトです。
-
-</p>
 <h2>新着情報</h2>
-<ul class="posts">
+<ul data-role="listview">
   {% for post in site.posts %}
-    <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+    <li><a href="{{ post.url }}"><span>{{ post.date | date_to_string }}</span> &raquo; {{ post.title }}</a></li>
     {% endfor %}
 </ul>
+
 <h2>関連リンク</h2>
-<ul>
+<ul data-role="listview">
   <li><a href="http://dicomo.org" rel="external">DICOMO 2014公式サイト</a></li>
   <li><a href="http://www.ipsj.or.jp/" rel="external">情報処理学会</a></li>
-  <li><a href="https://github.com/dicomo2014/dicomo2014.github.io" rel="external">このサイトのソース</a></li>
+  <li><a href="/about/">このサイトについて</a></li>
 </ul>
