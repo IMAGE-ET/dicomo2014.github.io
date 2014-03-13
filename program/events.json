@@ -1,1 +1,1 @@
-[{ id: "0", title: "keynote", start: "2014-07-09 13:30:00", end: "2014-07-09 15:00:00"},{ id: "1", title: "keynote2", start: "2014-07-09 13:30:00", end: "2014-07-09 15:00:00"}]
+{% include events.json %}
