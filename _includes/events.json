@@ -1,6 +1,1 @@
-[{% for event in site.data.events %}
-{id: "{{ event.id }}", title: "{{ event.title }}",
- start: "{{ event.start | date_to_xmlschema }}",
- end: "{{ event.end | date_to_xmlschema }}" }
-{% unless forloop.last %},{% endunless %}
-{% endfor %}]
+{{ site.data.events | jsonify }}
