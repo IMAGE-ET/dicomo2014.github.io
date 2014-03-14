@@ -22,7 +22,7 @@ $("#{{ date.id }}").on('click',function() {
 {% endfor %}
 </script>
 <script>
-$(document).ready(function() {
+$(document).on('pageshow', "#program", function() {
   $("#calendar").fullCalendar({
     events:
 {% include events.json %},
@@ -36,10 +36,6 @@ $(document).ready(function() {
     eventClick: function(event) {
       window.location="/session/#" + event.id;
     }
-  });
-  // for ajax-loading of jquery mobile
-  $("#program").bind('pageshow', function(e) {
-    $("#calendar").fullCalendar('render');
   });
   $("#program").on("swipeleft", function(event) {
     $("#calendar").fullCalendar('next');

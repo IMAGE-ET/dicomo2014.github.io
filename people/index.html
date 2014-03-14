@@ -1,22 +1,21 @@
 ---
 layout: default
-title: 参加者
+title: People
 id: people
 ---
 <form>
   <input type="text" data-type="search" id="filterable-input" />
 </form>
 <div data-filter="true" data-input="#filterable-input">
-{% for member in site.data.members %}
-<div data-role="collapsible">
-<h2 id="{{ member.id }}">{{ member.id }} : {{ member.name }}</h2>
-<a name="{{ member.id }}"></a>
-<ul>
+{% for member in site.data.people %}
+<div data-role="collapsible" id="{{ member.id }}" data-iconpos="left">
+<h1>{% if member.emailhash %}<img src="http://www.gravatar.com/avatar/{{ member.emailhash }}?s=32&d=retro"/>{% endif %}{{ member.id }} : {{ member.name }}</h1>
+<ul data-role="listview">
 {% if member.org %}
   <li>所属: {{ member.org }}</li>
 {% endif %}
 {% if member.twitter %}
-  <li>Twitter: <a href="http://twitter.com/{{ member.twitter }}">@{{ member.twitter }}</a></li>
+  <li><a href="http://twitter.com/{{ member.twitter }}">Twitter: @{{ member.twitter }}</a></li>
 {% endif %}
 {% if member.url %}
   <li><a href="{{ member.url }}" data-icon="home">{{ member.url }}</a></li>
@@ -28,3 +27,8 @@ id: people
 <!-- white space -->
 <div style="height:500px;">
 </div>
+<script>
+//$(document).on('pageinit', "#people", function() {
+//  $("#m001 > h1 > a").append('<span class="ui-icon ui-icon-home">&nbsp;</span>');
+//});
+</script>

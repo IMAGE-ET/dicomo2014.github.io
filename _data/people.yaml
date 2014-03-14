@@ -1,0 +1,17 @@
+- id: m001
+  name: 野村
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  emailhash: 0bc18dd65dec21f0601e33ada8937ad6
+  staff: 実行委員(広報)
+  session:
+  - id: 1b
+    sessiontitle: 統一テーマ
+    paperid: p001
+    papertitle: test
+- id: m002
+  name: 宗像
+  url: http://jp.fujitsu.com
+  emailhash: 65deb90a95576c03521043d250b89ced
+  staff: 実行委員
