@@ -1,0 +1,16 @@
+---
+layout: default
+---
+<div data-role="page" id="{{page.id}}">
+  <div data-role="header">
+    <h1> {{page.title}} </h1>
+    {% include navbar.html %}
+  </div> <!-- header -->
+  {{ content }}
+  <div data-role="footer">
+    <div class="contact">
+      &copy; <a href="mailto:{{ site.author.email }}" data-icon="mail">
+      {{ site.author.name }}</a>
+    </div>
+  </div> <!-- footer -->
+</div> <!-- page -->

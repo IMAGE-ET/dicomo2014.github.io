@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 title: Program
 id: program
 ---
@@ -23,9 +23,9 @@ $("#{{ date.id }}").on('click',function() {
 </script>
 <script>
 $(document).on('pageshow', "#program", function() {
+  $("#calendar").empty();
   $("#calendar").fullCalendar({
-    events:
-{% include events.json %},
+    events: {{ site.data.events | jsonify }},
     defaultView: "agendaDay",
     allDayDefault: false,
     year: {{ first_date.year }},

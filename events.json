@@ -1,4 +1,4 @@
 ---
 layout: none
 ---
-{% include events.json %}
+{{ site.data.events | jsonify }}

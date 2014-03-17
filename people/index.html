@@ -1,19 +1,36 @@
 ---
 layout: default
 title: People
-id: people
 ---
+<!-- index page -->
+<div data-role="page" id="people">
+<div data-role="header">
+<h1>People</h1>
+{% include navbar.html %}
+</div>
 <form>
   <input type="text" data-type="search" id="filterable-input" />
 </form>
-<div data-filter="true" data-input="#filterable-input">
+<ul data-role="listview" data-filter="true" data-input="#filterable-input">
 {% for member in site.data.people %}
-<div data-role="collapsible" id="{{ member.id }}" data-iconpos="left">
+  <li><a href="#{{ member.id }}">{% if member.emailhash %}<img src="http://www.gravatar.com/avatar/{{ member.emailhash }}?s=32&d=retro"/>{% endif %}{{ member.id }} : {{ member.name }}</a></li>
+{% endfor %}
+</ul>
+</div><!-- page -->
+
+<!-- page for individuals -->
+
+{% for member in site.data.people %}
+<div data-role="page" id="{{ member.id }}">
+<div data-role="header">
 <h1>{% if member.emailhash %}<img src="http://www.gravatar.com/avatar/{{ member.emailhash }}?s=32&d=retro"/>{% endif %}{{ member.id }} : {{ member.name }}</h1>
-<ul data-role="listview">
+{% include navbar.html %}
+</div><!-- header -->
+<p>氏名：{{ member.name }}</p>
 {% if member.org %}
-  <li>所属: {{ member.org }}</li>
+  <p>所属: {{ member.org }}</p>
 {% endif %}
+<ul data-role="listview">
 {% if member.twitter %}
   <li><a href="http://twitter.com/{{ member.twitter }}">Twitter: @{{ member.twitter }}</a></li>
 {% endif %}
@@ -21,14 +38,5 @@ id: people
   <li><a href="{{ member.url }}" data-icon="home">{{ member.url }}</a></li>
 {% endif %}
 </ul>
-</div>
+</div> <!-- page -->
 {% endfor %}
-</div>
-<!-- white space -->
-<div style="height:500px;">
-</div>
-<script>
-//$(document).on('pageinit', "#people", function() {
-//  $("#m001 > h1 > a").append('<span class="ui-icon ui-icon-home">&nbsp;</span>');
-//});
-</script>

@@ -17,18 +17,6 @@
       <script src="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/1.6.4/fullcalendar.min.js"></script>
     </head>
     <body>
-        <div data-role="page" id="{{page.id}}">
-          <div data-role="header">
-<h1> {{page.title}} </h1>
-{% include navbar.html %}
-          </div>
-          {{ content }}
-          <div data-role="footer">
-            <div class="contact">
-                &copy; <a href="mailto:{{ site.author.email }}" data-icon="mail">
-                {{ site.author.name }}</a>
-            </div>
-          </div>
-        </div>
+      {{ content }}
     </body>
 </html>
