@@ -13,7 +13,7 @@ title: People
 </form>
 <ul data-role="listview" data-filter="true" data-input="#filterable-input">
 {% for member in site.data.people %}
-  <li><a href="#{{ member.id }}">{% if member.emailhash %}<img src="http://www.gravatar.com/avatar/{{ member.emailhash }}?s=32&d=retro"/>{% endif %}{{ member.id }} : {{ member.name }}</a></li>
+  <li><a data-ajax="false" data-icon="arrow-r" data-iconpos="right" href="/people/#{{ member.id }}">{% if member.emailhash %}<img class="ui-li-icon" src="http://www.gravatar.com/avatar/{{ member.emailhash }}?s=32&d=retro"/>{% endif %}{{ member.name }}<span class="ui-li-count">{{ member.id }}</span></a></li>
 {% endfor %}
 </ul>
 </div><!-- page -->
@@ -23,13 +23,28 @@ title: People
 {% for member in site.data.people %}
 <div data-role="page" id="{{ member.id }}">
 <div data-role="header">
-<h1>{% if member.emailhash %}<img src="http://www.gravatar.com/avatar/{{ member.emailhash }}?s=32&d=retro"/>{% endif %}{{ member.id }} : {{ member.name }}</h1>
+<h1>{% if member.emailhash %}<img src="http://www.gravatar.com/avatar/{{ member.emailhash }}?s=32&d=retro"/>{% endif %} {{ member.name }} <small>{{ member.id }}</small></h1>
 {% include navbar.html %}
 </div><!-- header -->
-<p>氏名：{{ member.name }}</p>
 {% if member.org %}
   <p>所属: {{ member.org }}</p>
 {% endif %}
+{% if member.group %}
+  <p>研究会: {{ member.group }}</p>
+{% endif %}
+{% if member.session %}
+<h2>参加セッション</h2>
+<div data-role="collapsible">
+{% for s in member.session %}
+<h3>{{ s.title }} : {{ s.role }}</h3>
+{% if s.papertitle %}
+<p>論文タイトル：{{ s.papertitle }}</p>
+{% endif %}
+<a data-role="button" data-icon="arrow-r" data-iconpos="right" data-ajax="false" href="/session/#{{ s.id }}">{{ s.title }}</a>
+{% endfor %}
+</div>
+{% endif %}
+<h2>リンク</h2>
 <ul data-role="listview">
 {% if member.twitter %}
   <li><a href="http://twitter.com/{{ member.twitter }}">Twitter: @{{ member.twitter }}</a></li>

@@ -1,17 +1,5214 @@
-- id: m001
+- id: m0
   name: 野村
   twitter: yoshimov
   facebook: http://facebook.com/yoshimov
   url: http://yoshimov.com
   emailhash: 0bc18dd65dec21f0601e33ada8937ad6
   staff: 実行委員(広報)
+  group: なし
   session:
   - id: 1b
-    sessiontitle: 統一テーマ
-    paperid: p001
-    papertitle: test
-- id: m002
-  name: 宗像
-  url: http://jp.fujitsu.com
-  emailhash: 65deb90a95576c03521043d250b89ced
-  staff: 実行委員
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m1
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m2
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m3
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m4
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m5
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m6
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m7
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m8
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m9
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m10
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m11
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m12
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m13
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m14
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m15
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m16
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m17
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m18
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m19
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m20
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m21
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m22
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m23
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m24
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m25
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m26
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m27
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m28
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m29
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m30
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m31
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m32
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m33
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m34
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m35
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m36
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m37
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m38
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m39
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m40
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m41
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m42
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m43
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m44
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m45
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m46
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m47
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m48
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m49
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m50
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m51
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m52
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m53
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m54
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m55
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m56
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m57
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m58
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m59
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m60
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m61
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m62
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m63
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m64
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m65
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m66
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m67
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m68
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m69
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m70
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m71
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m72
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m73
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m74
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m75
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m76
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m77
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m78
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m79
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m80
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m81
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m82
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m83
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m84
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m85
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m86
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m87
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m88
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m89
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m90
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m91
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m92
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m93
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m94
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m95
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m96
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m97
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m98
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m99
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m100
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m101
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m102
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m103
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m104
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m105
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m106
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m107
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m108
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m109
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m110
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m111
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m112
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m113
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m114
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m115
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m116
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m117
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m118
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m119
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m120
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m121
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m122
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m123
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m124
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m125
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m126
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m127
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m128
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m129
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m130
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m131
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m132
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m133
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m134
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m135
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m136
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m137
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m138
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m139
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m140
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m141
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m142
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m143
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m144
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m145
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m146
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m147
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m148
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m149
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m150
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m151
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m152
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m153
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m154
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m155
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m156
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m157
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m158
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m159
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m160
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m161
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m162
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m163
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m164
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m165
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m166
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m167
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m168
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m169
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m170
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m171
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m172
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m173
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m174
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m175
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m176
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m177
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m178
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m179
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m180
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m181
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m182
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m183
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m184
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m185
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m186
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m187
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m188
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m189
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m190
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m191
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m192
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m193
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m194
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m195
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m196
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m197
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m198
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m199
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m200
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m201
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m202
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m203
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m204
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m205
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m206
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m207
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m208
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m209
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m210
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m211
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m212
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m213
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m214
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m215
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m216
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m217
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m218
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m219
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m220
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m221
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m222
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m223
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m224
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m225
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m226
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m227
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m228
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m229
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m230
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m231
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m232
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m233
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m234
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m235
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m236
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m237
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m238
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m239
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m240
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m241
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m242
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m243
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m244
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m245
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m246
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m247
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m248
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m249
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m250
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m251
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m252
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m253
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m254
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m255
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m256
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m257
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m258
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m259
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m260
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m261
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m262
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m263
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m264
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m265
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m266
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m267
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m268
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m269
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m270
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m271
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m272
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m273
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m274
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m275
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m276
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m277
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m278
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m279
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m280
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m281
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m282
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m283
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m284
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m285
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m286
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m287
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m288
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m289
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m290
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m291
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m292
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m293
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m294
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m295
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m296
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m297
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m298
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m299
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m300
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m301
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m302
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m303
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m304
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m305
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m306
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m307
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m308
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m309
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m310
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m311
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m312
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m313
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m314
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m315
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m316
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m317
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m318
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m319
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m320
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m321
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m322
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m323
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m324
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m325
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m326
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m327
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m328
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m329
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m330
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m331
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m332
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m333
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m334
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m335
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m336
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m337
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m338
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m339
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m340
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m341
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m342
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m343
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m344
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m345
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m346
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m347
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m348
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m349
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m350
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m351
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m352
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m353
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m354
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m355
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m356
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m357
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m358
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m359
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m360
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m361
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m362
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m363
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m364
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m365
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m366
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m367
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m368
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m369
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m370
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m371
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m372
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m373
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m374
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m375
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m376
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m377
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m378
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m379
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m380
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m381
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m382
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m383
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m384
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m385
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m386
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m387
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m388
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m389
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m390
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m391
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m392
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m393
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m394
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m395
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m396
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m397
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m398
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m399
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
+- id: m400
+  name: test
+  twitter: yoshimov
+  facebook: http://facebook.com/yoshimov
+  url: http://yoshimov.com
+  staff: 実行委員(広報)
+  group: なし
+  session:
+  - id: 1b
+    title: 1B:統一テーマ
+    role: 発表者
+    papertitle: "test"
+
