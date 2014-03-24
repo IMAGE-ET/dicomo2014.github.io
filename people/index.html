@@ -5,6 +5,7 @@ title: People
 <!-- index page -->
 <div data-role="page" id="people">
 <div data-role="header">
+    <a data-rel="back" data-icon="back" class="ui-btn-left">Back</a>
 <h1>People</h1>
 {% include navbar.html %}
 </div>
@@ -13,7 +14,7 @@ title: People
 </form>
 <ul data-role="listview" data-filter="true" data-input="#filterable-input">
 {% for member in site.data.people %}
-  <li><a data-ajax="false" data-icon="arrow-r" data-iconpos="right" href="/people/#{{ member.id }}">{% if member.emailhash %}<img class="ui-li-icon" src="http://www.gravatar.com/avatar/{{ member.emailhash }}?s=32&d=retro"/>{% endif %}{{ member.name }}<span class="ui-li-count">{{ member.id }}</span></a></li>
+  <li><a data-ajax="false" data-icon="arrow-r" data-iconpos="right" data-transition="slide" href="/people/#{{ member.id }}">{% if member.emailhash %}<img class="ui-li-icon" src="http://www.gravatar.com/avatar/{{ member.emailhash }}?s=32&d=retro"/>{% endif %}{{ member.name }}<span class="ui-li-count">{{ member.id }}</span></a></li>
 {% endfor %}
 </ul>
 </div><!-- page -->
@@ -23,6 +24,7 @@ title: People
 {% for member in site.data.people %}
 <div data-role="page" id="{{ member.id }}">
 <div data-role="header">
+    <a data-rel="back" data-icon="back" class="ui-btn-left">Back</a>
 <h1>{% if member.emailhash %}<img src="http://www.gravatar.com/avatar/{{ member.emailhash }}?s=32&d=retro"/>{% endif %} {{ member.name }} <small>{{ member.id }}</small></h1>
 {% include navbar.html %}
 </div><!-- header -->

@@ -10,19 +10,18 @@ id: program
 {% endfor %}
 </ul>
 </div>
-<div id="calendar"></div>
+<div data-ajax="false" id="calendar"></div>
 <script>
 {% for date in site.data.days %}
 {% if forloop.first %}
 {% assign first_date = date %}
 {% endif %}
-$("#{{ date.id }}").on('click',function() {
+$(document).on('click', "#{{ date.id }}", function() {
   $("#calendar").fullCalendar('gotoDate',{{ date.year }},{{ date.month | minus: 1 }},{{ date.day }});
 });
 {% endfor %}
-</script>
-<script>
-$(document).on('pageshow', "#program", function() {
+
+$(document).on('pagecontainershow', ":mobile-pagecontainer", function() {
   $("#calendar").empty();
   $("#calendar").fullCalendar({
     events: {{ site.data.events | jsonify }},
@@ -34,12 +33,25 @@ $(document).on('pageshow', "#program", function() {
     minTime: "7:00",
     height: 1024,
     eventClick: function(event) {
-      window.location="/session/#" + event.id;
-    }
+      $.mobile.ajaxEnabled="false";
+      var path = "/session/#" + event.id;
+      console.log(path);
+      window.location.href=path;
+/*
+      path = $.mobile.path.makeUrlAbsolute(path, $.mobile.path.getDocumentUrl());
+      window.location.reload();
+      $(":mobile-pagecontainer").pagecontainer("change", apath, {"reload": "true", "allowSamePageTransition": "true"});
+      $.mobile.navigate(apath);
+*/
+}
   });
+});
+$(document).on('pagecreate', "#program", function() {
+  $("#program").off("swipeleft");
   $("#program").on("swipeleft", function(event) {
     $("#calendar").fullCalendar('next');
   });
+  $("#program").off("swiperight");
   $("#program").on("swiperight", function(event) {
     $("#calendar").fullCalendar('prev');
   });
