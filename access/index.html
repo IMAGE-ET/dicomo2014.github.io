@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Access
+id: access
 ---
 <ul data-role="listview">
 {% for access in site.data.access %}
@@ -16,10 +17,12 @@ title: Access
 {% endfor %}
 </ul>
 <script>
-if ((navigator.userAgent.indexOf('iPhone')) > 0) {
-  $(".maplink a").each(function() {
-    var u = $(this).attr('href').replace(/google/g, 'apple');
-    $(this).attr('href',u);
-  });
-};
+$(document).on('pageshow', "#access", function() {
+  if ((navigator.userAgent.indexOf('iPhone')) > 0) {
+    $(".maplink a").each(function() {
+      var u = $(this).attr('href').replace(/google/g, 'apple');
+      $(this).attr('href',u);
+    });
+  };
+});
 </script>
