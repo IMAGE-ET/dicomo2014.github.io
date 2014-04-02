@@ -24,7 +24,7 @@ $(document).on('click', "#{{ date.id }}", function() {
 $(document).on('pagecontainershow', ":mobile-pagecontainer", function() {
   $("#calendar").empty();
   $("#calendar").fullCalendar({
-    events: {{ site.data.events | jsonify }},
+    events: {% include events.json %},
     defaultView: "agendaDay",
     allDayDefault: false,
     year: {{ first_date.year }},
@@ -33,16 +33,9 @@ $(document).on('pagecontainershow', ":mobile-pagecontainer", function() {
     minTime: "7:00",
     height: 1024,
     eventClick: function(event) {
-      $.mobile.ajaxEnabled="false";
-      var path = "/session/#" + event.id;
+      var path = event.id;
       console.log(path);
-      window.location.href=path;
-/*
-      path = $.mobile.path.makeUrlAbsolute(path, $.mobile.path.getDocumentUrl());
-      window.location.reload();
-      $(":mobile-pagecontainer").pagecontainer("change", apath, {"reload": "true", "allowSamePageTransition": "true"});
-      $.mobile.navigate(apath);
-*/
+      $.mobile.navigate(path);
 }
   });
 });

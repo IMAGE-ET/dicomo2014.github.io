@@ -7,6 +7,8 @@ CACHE MANIFEST
 /README.html
 /program/
 /session/
+{% for event in site.categories.session %}{{ event.id }}/
+{% endfor %}
 /people/
 /access/
 /css/main.css
