@@ -14,7 +14,7 @@ title: People
 </form>
 <ul data-role="listview" data-filter="true" data-input="#filterable-input">
 {% for member in site.data.people %}
-  <li><a data-icon="arrow-r" data-iconpos="right" data-transition="slide" href="/people/#{{ member.id }}">{% if member.emailhash %}<img class="ui-li-icon" src="http://www.gravatar.com/avatar/{{ member.emailhash }}?s=32&d=retro"/>{% endif %}{{ member.name }}<span class="ui-li-count">{{ member.id }}</span></a></li>
+  <li><a data-icon="arrow-r" data-iconpos="right" data-transition="slide" href="/people/#{{ member.id }}" id="list-{{ member.id }}">{% if member.emailhash %}<img class="ui-li-icon" src="http://www.gravatar.com/avatar/{{ member.emailhash }}?s=32&d=retro"/>{% endif %}{{ member.name }}<span id="star-{{member.id}}"></span><span class="ui-li-count">{{ member.id }}</span></a></li>
 {% endfor %}
 </ul>
 </div><!-- page -->
@@ -22,12 +22,13 @@ title: People
 <!-- page for individuals -->
 
 {% for member in site.data.people %}
-<div data-role="page" id="{{ member.id }}">
+<div data-role="page" class="pagei" id="{{ member.id }}">
 <div data-role="header">
     <a data-rel="back" data-icon="back" class="ui-btn-left">Back</a>
-<h1>{% if member.emailhash %}<img src="http://www.gravatar.com/avatar/{{ member.emailhash }}?s=32&d=retro"/>{% endif %} {{ member.name }} <small>{{ member.id }}</small></h1>
+<h1>{% if member.emailhash %}<img src="http://www.gravatar.com/avatar/{{ member.emailhash }}?s=32&d=retro"/>{% endif %} {{ member.name }} <small>({{ member.id }})</small></h1>
 {% include navbar.html %}
 </div><!-- header -->
+<a data-role="button" class="pagefav" id="fav-{{ member.id }}">お気に入りに追加</a>
 {% if member.org %}
   <p>所属: {{ member.org }}</p>
 {% endif %}
@@ -57,3 +58,45 @@ title: People
 </ul>
 </div> <!-- page -->
 {% endfor %}
+
+<script>
+$("#people").on("pagecreate", function() {
+  if (window.localStorage && window.localStorage.getItem("favpeople")) {
+    var favj = JSON.parse(window.localStorage.getItem("favpeople"));
+    for (var i in favj) {
+      $("#star-" + i).html("<font color='orange'>★</font>");
+    }
+  }
+});
+$(".pagei").on("pagecreate", function() {
+  var i = this.id
+  if (window.localStorage && window.localStorage.getItem("favpeople")) {
+    var favj = JSON.parse(window.localStorage.getItem("favpeople"));
+    if (favj[i]) {
+      $("#fav-" + i).html("<font color='orange'>★</font>お気に入りを解除");
+    };
+  }
+});
+$(".pagefav").on("click", function() {
+  var str = $(this).text();
+  var i = this.id.slice(4);
+  if (str.indexOf("★") >= 0) {
+    // remove from favorite
+    var favj = JSON.parse(window.localStorage.getItem("favpeople"));
+    delete favj[i];
+    window.localStorage.setItem("favpeople", JSON.stringify(favj));
+    $("#fav-" + i).html("お気に入りに追加");
+    $("#star-" + i).html("");
+  } else {
+    // add to favorite
+    var favj = {};
+    if (window.localStorage && window.localStorage.getItem("favpeople")) {
+      favj = JSON.parse(window.localStorage.getItem("favpeople"));
+    }
+    favj[i] = new Date();
+    window.localStorage.setItem("favpeople", JSON.stringify(favj));
+    $("#fav-" + i).html("<font color='orange'>★</font>お気に入りを解除");
+    $("#star-" + i).html("<font color='orange'>★</font>");
+  }
+});
+</script>
