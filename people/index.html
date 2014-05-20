@@ -14,7 +14,7 @@ title: People
 </form>
 <ul data-role="listview" data-filter="true" data-input="#filterable-input">
 {% for member in site.data.people %}
-  <li><a data-ajax="false" data-icon="arrow-r" data-iconpos="right" data-transition="slide" href="/people/#{{ member.id }}">{% if member.emailhash %}<img class="ui-li-icon" src="http://www.gravatar.com/avatar/{{ member.emailhash }}?s=32&d=retro"/>{% endif %}{{ member.name }}<span class="ui-li-count">{{ member.id }}</span></a></li>
+  <li><a data-icon="arrow-r" data-iconpos="right" data-transition="slide" href="/people/#{{ member.id }}">{% if member.emailhash %}<img class="ui-li-icon" src="http://www.gravatar.com/avatar/{{ member.emailhash }}?s=32&d=retro"/>{% endif %}{{ member.name }}<span class="ui-li-count">{{ member.id }}</span></a></li>
 {% endfor %}
 </ul>
 </div><!-- page -->
@@ -42,7 +42,7 @@ title: People
 {% if s.papertitle %}
 <p>論文タイトル：{{ s.papertitle }}</p>
 {% endif %}
-<a data-role="button" data-icon="arrow-r" data-iconpos="right" data-ajax="false" href="/session/#{{ s.id }}">{{ s.title }}</a>
+<a data-role="button" data-icon="arrow-r" data-iconpos="right" href="/session/#{{ s.id }}">{{ s.title }}</a>
 {% endfor %}
 </div>
 {% endif %}
