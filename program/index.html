@@ -23,8 +23,19 @@ $("#{{ date.id }}").on("click", function() {
 
 $(document).on('pagecontainershow', ":mobile-pagecontainer", function() {
   $("#calendar").empty();
+  var eventlist = {% include events.json %};
+  if (window.localStorage && window.localStorage.getItem("favevent")) {
+    var favj = JSON.parse(window.localStorage.getItem("favevent"));
+    // お気に入りのイベントに色を付ける
+    for (var i = 0; i < eventlist.length; i ++) {
+      if (eventlist[i].id && favj[eventlist[i].id]) {
+        eventlist[i]["backgroundColor"]="darkorange";
+      }
+    }
+  }
+
   $("#calendar").fullCalendar({
-    events: {% include events.json %},
+    events: eventlist,
     defaultView: "agendaDay",
     allDayDefault: false,
     year: {{ first_date.year }},
@@ -32,11 +43,7 @@ $(document).on('pagecontainershow', ":mobile-pagecontainer", function() {
     date: {{ first_date.day }},
     minTime: "7:00",
     height: 1024,
-    eventClick: function(event) {
-      var path = event.id;
-      console.log(path);
-      $.mobile.navigate(path);
-}
+    eventTextColor: "white"
   });
 });
 $("#program").on("pagecreate", function() {

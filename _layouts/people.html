@@ -1,14 +1,8 @@
 ---
-layout: default
+layout: page
 ---
-<div data-role="page" id="{{page.num}}">
-  <div data-role="header">
-    <a data-rel="back" data-icon="back" class="ui-btn-left">Back</a>
-    <h1>{% if page.emailhash %}<img src="http://www.gravatar.com/avatar/{{ page.emailhash }}?s=32&d=retro"/>{% endif %} {{page.title}} </h1>
-    {% include navbar.html %}
-  </div> <!-- header -->
-  <p class="meta">ID: {{ page.num }}</p>
-<a data-role="button" class="pagefav" id="fav-{{ page.num }}">{{site.favorite.addmessage}}</a>
+  <p class="meta">ID: {{ page.pageid }}</p>
+<a data-role="button" class="pagefav" id="fav-{{ page.pageid }}">{{site.favorite.addmessage}}</a>
 {% if page.org %}
   <p>所属: {{ page.org }}</p>
 {% endif %}
@@ -17,7 +11,7 @@ layout: default
 {% endif %}
 <p>  {{ content }} </p>
 {% if page.session %}
-<h2>関連セッション</h2>
+<h3>関連セッション</h3>
 <div data-role="collapsible">
 {% for s in page.session %}
 <h3>{{ s.sessiontitle }} : {{ s.role }}</h3>
@@ -28,14 +22,8 @@ layout: default
 {% endfor %}
 </div>
 {% endif %}
-  <div data-role="footer">
-    <div class="contact">
-      &copy; <a href="mailto:{{ site.author.email }}" data-icon="mail">
-      {{ site.author.name }}</a>
-    </div>
-  </div> <!-- footer -->
 <script>
-$("#{{page.num}}").on("pagecreate", function() {
+$("#{{page.pageid}}").on("pagecreate", function() {
   var i = this.id
   if (window.localStorage && window.localStorage.getItem("favpeople")) {
     var favj = JSON.parse(window.localStorage.getItem("favpeople"));
@@ -68,4 +56,3 @@ $(".pagefav").on("click", function() {
   }
 });
 </script>
-</div> <!-- page -->

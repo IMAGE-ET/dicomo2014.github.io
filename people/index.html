@@ -14,7 +14,7 @@ title: People
 </form>
 <ul data-role="listview" data-filter="true" data-input="#filterable-input">
 {% for member in site.categories.people %}
-  <li><a data-icon="arrow-r" data-iconpos="right" data-transition="slide" href="{{ member.url }}" id="list-{{ member.num }}">{% if member.emailhash %}<img class="ui-li-icon" src="http://www.gravatar.com/avatar/{{ member.emailhash }}?s=32&d=retro"/>{% endif %}{{ member.title }}<span class="favstar" id="star-{{member.num}}"></span><span class="ui-li-count">{{ member.num }}</span></a></li>
+  <li><a data-icon="arrow-r" data-iconpos="right" data-transition="slide" href="{{ member.url }}" id="list-{{ member.pageid }}">{% if member.emailhash %}<img class="ui-li-icon" src="http://www.gravatar.com/avatar/{{ member.emailhash }}?s=32&d=retro"/>{% endif %}{{ member.title }}<span class="favstar" id="star-{{member.pageid}}"></span><span class="ui-li-count">{{ member.pagei }}</span></a></li>
 {% endfor %}
 </ul>
   <div data-role="footer">

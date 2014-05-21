@@ -2,9 +2,47 @@
 layout: page
 ---
 <h2>{{ page.title }}</h2>
-<p class="meta">Start: {{ page.start | date_to_string }}</p>
-<p class="meta">End: {{ page.end | date_to_string }}</p>
+<ul data-role="listview">
+<li>日時: {{ page.start | date: "%m/%d" }} {{ page.start | date: "%H時%M分" }}-{{ page.end | date: "%H時%M分" }}</li>
+{% if page.location %}
+<li>場所: {{ page.location }}</li>
+{% endif %}
+</ul>
+<a data-role="button" class="eventfav" id="fav-{{ page.pageid }}">{{site.favorite.addmessage}}</a>
 
 <div class="post">
 {{ content }}
 </div>
+<script>
+$("#{{page.pageid}}").on("pagecreate", function() {
+  var i = this.id
+  if (window.localStorage && window.localStorage.getItem("favevent")) {
+    var favj = JSON.parse(window.localStorage.getItem("favevent"));
+    if (favj[i]) {
+      $("#fav-" + i).html("{{site.favorite.removemessage}}");
+    }
+  }
+});
+$(".eventfav").on("click", function() {
+  var str = $(this).text();
+  var i = this.id.slice(4);
+  if (str.indexOf("★") >= 0) {
+    // remove from favorite
+    var favj = JSON.parse(window.localStorage.getItem("favevent"));
+    delete favj[i];
+    window.localStorage.setItem("favevent", JSON.stringify(favj));
+    $("#fav-" + i).html("{{site.favorite.addmessage}}");
+    $("#star-" + i).html("");
+  } else {
+    // add to favorite
+    var favj = {};
+    if (window.localStorage && window.localStorage.getItem("favevent")) {
+      favj = JSON.parse(window.localStorage.getItem("favevent"));
+    }
+    favj[i] = new Date();
+    window.localStorage.setItem("favevent", JSON.stringify(favj));
+    $("#fav-" + i).html("{{site.favorite.removemessage}}");
+    $("#star-" + i).html("{{site.favorite.star}}");
+  }
+});
+</script>
