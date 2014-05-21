@@ -1,0 +1,71 @@
+---
+layout: default
+---
+<div data-role="page" id="{{page.num}}">
+  <div data-role="header">
+    <a data-rel="back" data-icon="back" class="ui-btn-left">Back</a>
+    <h1>{% if page.emailhash %}<img src="http://www.gravatar.com/avatar/{{ page.emailhash }}?s=32&d=retro"/>{% endif %} {{page.title}} </h1>
+    {% include navbar.html %}
+  </div> <!-- header -->
+  <p class="meta">ID: {{ page.num }}</p>
+<a data-role="button" class="pagefav" id="fav-{{ page.num }}">{{site.favorite.addmessage}}</a>
+{% if page.org %}
+  <p>所属: {{ page.org }}</p>
+{% endif %}
+{% if page.group %}
+  <p>研究会: {{ page.group }}</p>
+{% endif %}
+<p>  {{ content }} </p>
+{% if page.session %}
+<h2>関連セッション</h2>
+<div data-role="collapsible">
+{% for s in page.session %}
+<h3>{{ s.sessiontitle }} : {{ s.role }}</h3>
+{% if s.papertitle %}
+<p>論文タイトル：{{ s.papertitle }}</p>
+{% endif %}
+<a data-role="button" data-icon="arrow-r" data-iconpos="right" href="{{ s.url }}">{{s.sessiontitle}}: セッション詳細</a>
+{% endfor %}
+</div>
+{% endif %}
+  <div data-role="footer">
+    <div class="contact">
+      &copy; <a href="mailto:{{ site.author.email }}" data-icon="mail">
+      {{ site.author.name }}</a>
+    </div>
+  </div> <!-- footer -->
+<script>
+$("#{{page.num}}").on("pagecreate", function() {
+  var i = this.id
+  if (window.localStorage && window.localStorage.getItem("favpeople")) {
+    var favj = JSON.parse(window.localStorage.getItem("favpeople"));
+    if (favj[i]) {
+      $("#fav-" + i).html("{{site.favorite.removemessage}}");
+    }
+  }
+});
+
+$(".pagefav").on("click", function() {
+  var str = $(this).text();
+  var i = this.id.slice(4);
+  if (str.indexOf("★") >= 0) {
+    // remove from favorite
+    var favj = JSON.parse(window.localStorage.getItem("favpeople"));
+    delete favj[i];
+    window.localStorage.setItem("favpeople", JSON.stringify(favj));
+    $("#fav-" + i).html("{{site.favorite.addmessage}}");
+    $("#star-" + i).html("");
+  } else {
+    // add to favorite
+    var favj = {};
+    if (window.localStorage && window.localStorage.getItem("favpeople")) {
+      favj = JSON.parse(window.localStorage.getItem("favpeople"));
+    }
+    favj[i] = new Date();
+    window.localStorage.setItem("favpeople", JSON.stringify(favj));
+    $("#fav-" + i).html("{{site.favorite.removemessage}}");
+    $("#star-" + i).html("{{site.favorite.star}}");
+  }
+});
+</script>
+</div> <!-- page -->

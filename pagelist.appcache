@@ -7,10 +7,10 @@ CACHE MANIFEST
 /README.html
 /program/
 /session/
-{% for event in site.categories.session %}{{ event.id }}/
-{% endfor %}
 /people/
 /access/
+{% for post in site.posts %}{{ post.id }}/
+{% endfor %}
 /css/main.css
 /css/syntax.css
 //code.jquery.com/jquery-2.1.0.min.js

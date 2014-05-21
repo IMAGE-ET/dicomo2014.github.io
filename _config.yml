@@ -11,6 +11,11 @@ author:
 
 site_url: http://dicomo2014.github.io
 
+favorite:
+  star: "<font color='orange'>★</font>"
+  addmessage: "お気に入りに追加"
+  removemessage: "<font color='orange'>★</font>お気に入りを解除"
+
 # navigation bar settings
 
 navigation:
@@ -19,10 +24,10 @@ navigation:
   icon: home
 - text: Program
   url: /program/
-  icon: clock
+  icon: calendar
 - text: Sessions
   url: /session/
-  icon: calendar
+  icon: bullets
 - text: People
   url: /people/
   icon: user

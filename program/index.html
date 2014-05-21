@@ -16,7 +16,7 @@ id: program
 {% if forloop.first %}
 {% assign first_date = date %}
 {% endif %}
-$(document).on('click', "#{{ date.id }}", function() {
+$("#{{ date.id }}").on("click", function() {
   $("#calendar").fullCalendar('gotoDate',{{ date.year }},{{ date.month | minus: 1 }},{{ date.day }});
 });
 {% endfor %}
@@ -39,7 +39,7 @@ $(document).on('pagecontainershow', ":mobile-pagecontainer", function() {
 }
   });
 });
-$(document).on('pagecreate', "#program", function() {
+$("#program").on("pagecreate", function() {
   $("#program").off("swipeleft");
   $("#program").on("swipeleft", function(event) {
     $("#calendar").fullCalendar('next');

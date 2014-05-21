@@ -1,63 +1,17 @@
-- id: divider
-  title: 全体
-
-- id: opening
-  title: 開会式
-  chairid: m001
-  chairname: 山本
-  start: "2014-07-09 12:30:00"
-  end: "2014-07-09 13:00:00"
-  placeid: pa
-  placename: A会場
-
-- id: outdoor
-  title: アウトドア
-
-- id: demo
-  title: デモセッション
-
-- id: night
-  title: ナイトテクニカルセッション
-
-- id: closing
-  title: 閉会式
-  placeid: pa
-  placename: A会場
-
-- id: divider
-  title: セッション
-
-- id: 1a
-  title: 1A:統一テーマ
-  placeid: pa
-  placename: A会場
-  chairid: m002
-  chairname: chair name
-  start: "2014-07-09 13:20:00"
-  end: "2014-07-09 15:00:00"
-  paper:
-  - id: p001
-    title: paper title 1
-    authorid: m001
-    authorname: test
-    abstract: "abstract"
-  - id: p002
-    title: paper title 2
-    authorid: m001
-    authorname: test
-    abstract: "abstract"
-
-- id: 1b
-  title: 1B:セッション
-  place: pb
-  placename: B会場
-  chairid: m002
-  chairname: chair name
-  start: "2014-07-09 13:20:00"
-  end: "2014-07-09 15:00:00"
-
-- id: divider
-  title: 研究会
-
-- id: dcc
-  title: デジタルコンテンツ
+- title: 特別招待講演
+  list:
+  - title: 招待講演
+    author: 
+    start: "2014-07-09 12:30:00"
+    end: "2014-07-09 13:00:00"
+    url: /session/lecture-sp
+- title: 招待講演
+  list:
+  - title: 招待講演
+    author: 
+    start: "2014-07-09 12:30:00"
+    end: "2014-07-09 13:00:00"
+    url: /session/lecture-sp
+- title: 一般セッション
+- title: デモセッション
+- title: ナイトテクニカルセッション

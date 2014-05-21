@@ -2,8 +2,11 @@
 layout: page
 title: Sessions
 ---
-<h2>招待講演</h2>
-
-<h2>セッション</h2>
-
-<h2>ナイトテクニカルセッション</h2>
+{% for cat in site.data.sessions %}
+<h2>{{cat.title}}</h2>
+<ul data-role="listview">
+{% for session in cat.list %}
+<li><a href="{{session.url}}">{{session.title}}</a></li>
+{% endfor %}
+</ul>
+{% endfor %}

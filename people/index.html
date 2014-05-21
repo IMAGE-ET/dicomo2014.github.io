@@ -13,90 +13,25 @@ title: People
   <input type="text" data-type="search" id="filterable-input" />
 </form>
 <ul data-role="listview" data-filter="true" data-input="#filterable-input">
-{% for member in site.data.people %}
-  <li><a data-icon="arrow-r" data-iconpos="right" data-transition="slide" href="/people/#{{ member.id }}" id="list-{{ member.id }}">{% if member.emailhash %}<img class="ui-li-icon" src="http://www.gravatar.com/avatar/{{ member.emailhash }}?s=32&d=retro"/>{% endif %}{{ member.name }}<span id="star-{{member.id}}"></span><span class="ui-li-count">{{ member.id }}</span></a></li>
+{% for member in site.categories.people %}
+  <li><a data-icon="arrow-r" data-iconpos="right" data-transition="slide" href="{{ member.url }}" id="list-{{ member.num }}">{% if member.emailhash %}<img class="ui-li-icon" src="http://www.gravatar.com/avatar/{{ member.emailhash }}?s=32&d=retro"/>{% endif %}{{ member.title }}<span class="favstar" id="star-{{member.num}}"></span><span class="ui-li-count">{{ member.num }}</span></a></li>
 {% endfor %}
 </ul>
-</div><!-- page -->
-
-<!-- page for individuals -->
-
-{% for member in site.data.people %}
-<div data-role="page" class="pagei" id="{{ member.id }}">
-<div data-role="header">
-    <a data-rel="back" data-icon="back" class="ui-btn-left">Back</a>
-<h1>{% if member.emailhash %}<img src="http://www.gravatar.com/avatar/{{ member.emailhash }}?s=32&d=retro"/>{% endif %} {{ member.name }} <small>({{ member.id }})</small></h1>
-{% include navbar.html %}
-</div><!-- header -->
-<a data-role="button" class="pagefav" id="fav-{{ member.id }}">お気に入りに追加</a>
-{% if member.org %}
-  <p>所属: {{ member.org }}</p>
-{% endif %}
-{% if member.group %}
-  <p>研究会: {{ member.group }}</p>
-{% endif %}
-{% if member.session %}
-<h2>参加セッション</h2>
-<div data-role="collapsible">
-{% for s in member.session %}
-<h3>{{ s.title }} : {{ s.role }}</h3>
-{% if s.papertitle %}
-<p>論文タイトル：{{ s.papertitle }}</p>
-{% endif %}
-<a data-role="button" data-icon="arrow-r" data-iconpos="right" href="/session/#{{ s.id }}">{{ s.title }}</a>
-{% endfor %}
-</div>
-{% endif %}
-<h2>リンク</h2>
-<ul data-role="listview">
-{% if member.twitter %}
-  <li><a href="http://twitter.com/{{ member.twitter }}">Twitter: @{{ member.twitter }}</a></li>
-{% endif %}
-{% if member.url %}
-  <li><a href="{{ member.url }}" data-icon="home">{{ member.url }}</a></li>
-{% endif %}
-</ul>
-</div> <!-- page -->
-{% endfor %}
-
+  <div data-role="footer">
+    <div class="contact">
+      &copy; <a href="mailto:{{ site.author.email }}" data-icon="mail">
+      {{ site.author.name }}</a>
+    </div>
+  </div> <!-- footer -->
 <script>
 $("#people").on("pagecreate", function() {
+  $(".favstar").html("");
   if (window.localStorage && window.localStorage.getItem("favpeople")) {
     var favj = JSON.parse(window.localStorage.getItem("favpeople"));
     for (var i in favj) {
-      $("#star-" + i).html("<font color='orange'>★</font>");
+      $("#star-" + i).html("{{site.favorite.star}}");
     }
-  }
-});
-$(".pagei").on("pagecreate", function() {
-  var i = this.id
-  if (window.localStorage && window.localStorage.getItem("favpeople")) {
-    var favj = JSON.parse(window.localStorage.getItem("favpeople"));
-    if (favj[i]) {
-      $("#fav-" + i).html("<font color='orange'>★</font>お気に入りを解除");
-    };
-  }
-});
-$(".pagefav").on("click", function() {
-  var str = $(this).text();
-  var i = this.id.slice(4);
-  if (str.indexOf("★") >= 0) {
-    // remove from favorite
-    var favj = JSON.parse(window.localStorage.getItem("favpeople"));
-    delete favj[i];
-    window.localStorage.setItem("favpeople", JSON.stringify(favj));
-    $("#fav-" + i).html("お気に入りに追加");
-    $("#star-" + i).html("");
-  } else {
-    // add to favorite
-    var favj = {};
-    if (window.localStorage && window.localStorage.getItem("favpeople")) {
-      favj = JSON.parse(window.localStorage.getItem("favpeople"));
-    }
-    favj[i] = new Date();
-    window.localStorage.setItem("favpeople", JSON.stringify(favj));
-    $("#fav-" + i).html("<font color='orange'>★</font>お気に入りを解除");
-    $("#star-" + i).html("<font color='orange'>★</font>");
   }
 });
 </script>
+</div><!-- page -->
