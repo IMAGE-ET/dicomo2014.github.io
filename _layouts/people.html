@@ -1,7 +1,10 @@
 ---
 layout: page
 ---
-  <p class="meta">ID: {{ page.pageid }}</p>
+{% if page.emailhash %}
+<a href="http://gravatar.com/{{page.emailhash}}"><img src="http://www.gravatar.com/avatar/{{ page.emailhash }}?s=40&d=retro" /></a>
+{% endif %}
+<font size="large">{{ page.title }}</font> <small>ID: {{ page.pageid }}</small>
 <a data-role="button" class="pagefav" id="fav-{{ page.pageid }}">{{site.favorite.addmessage}}</a>
 {% if page.org %}
   <p>所属: {{ page.org }}</p>
