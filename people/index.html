@@ -11,14 +11,4 @@ pageid: people
   <li><a data-icon="arrow-r" data-iconpos="right" data-transition="slide" href="{{ member.url }}" id="list-{{ member.pageid }}">{% if member.emailhash %}<img class="ui-li-icon" src="http://www.gravatar.com/avatar/{{ member.emailhash }}?s=32&d=retro"/>{% endif %}{{ member.title }}<span class="favstar" id="star-{{member.pageid}}"></span><span class="ui-li-count">{{ member.pageid }}</span></a></li>
 {% endfor %}
 </ul>
-<script>
-$("#people").on("pagecreate", function() {
-  $(".favstar").html("");
-  if (window.localStorage && window.localStorage.getItem("favpeople")) {
-    var favj = JSON.parse(window.localStorage.getItem("favpeople"));
-    for (var i in favj) {
-      $("#star-" + i).html("{{site.favorite.star}}");
-    }
-  }
-});
-</script>
+{% include favorite-list.html storage="favpeople" pageid="people" %}

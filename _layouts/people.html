@@ -4,8 +4,10 @@ layout: page
 {% if page.emailhash %}
 <a href="http://gravatar.com/{{page.emailhash}}"><img src="http://www.gravatar.com/avatar/{{ page.emailhash }}?s=40&d=retro" /></a>
 {% endif %}
-<font size="large">{{ page.title }}</font> <small>ID: {{ page.pageid }}</small>
-<a data-role="button" class="pagefav" id="fav-{{ page.pageid }}">{{site.favorite.addmessage}}</a>
+<font size="large">{{ page.title }}</font>
+<small>ID: {{ page.pageid }}</small>
+{% include favorite-button.html storage='favpeople' pageid=page.pageid %}
+
 {% if page.org %}
   <p>所属: {{ page.org }}</p>
 {% endif %}
@@ -25,37 +27,3 @@ layout: page
 {% endfor %}
 </div>
 {% endif %}
-<script>
-$("#{{page.pageid}}").on("pagecreate", function() {
-  var i = this.id
-  if (window.localStorage && window.localStorage.getItem("favpeople")) {
-    var favj = JSON.parse(window.localStorage.getItem("favpeople"));
-    if (favj[i]) {
-      $("#fav-" + i).html("{{site.favorite.removemessage}}");
-    }
-  }
-});
-
-$(".pagefav").on("click", function() {
-  var str = $(this).text();
-  var i = this.id.slice(4);
-  if (str.indexOf("★") >= 0) {
-    // remove from favorite
-    var favj = JSON.parse(window.localStorage.getItem("favpeople"));
-    delete favj[i];
-    window.localStorage.setItem("favpeople", JSON.stringify(favj));
-    $("#fav-" + i).html("{{site.favorite.addmessage}}");
-    $("#star-" + i).html("");
-  } else {
-    // add to favorite
-    var favj = {};
-    if (window.localStorage && window.localStorage.getItem("favpeople")) {
-      favj = JSON.parse(window.localStorage.getItem("favpeople"));
-    }
-    favj[i] = new Date();
-    window.localStorage.setItem("favpeople", JSON.stringify(favj));
-    $("#fav-" + i).html("{{site.favorite.removemessage}}");
-    $("#star-" + i).html("{{site.favorite.star}}");
-  }
-});
-</script>

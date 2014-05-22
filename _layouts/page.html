@@ -5,6 +5,7 @@ layout: default
   <div data-role="header">
     <a data-rel="back" data-icon="back" class="ui-btn-left">Back</a>
     <h1> {{page.title}} </h1>
+    <a href="#option" data-icon="gear" class="ui-btn-right">Option</a>
     {% include navbar.html %}
   </div> <!-- header -->
   {{ content }}
@@ -14,4 +15,13 @@ layout: default
       {{ site.author.name }}</a>
     </div>
   </div> <!-- footer -->
+  <div data-role="panel" data-position="right" data-display="overlay" id="option">
+   <div class="panel-content">
+   <h3>Option</h3>
+   <ul data-role="listview">
+    <li><a href="javascript:(function(){var u=location.href;void(window.open('http://zxing.org/w/chart?cht=qr&chs=230x230&chld=L&choe=UTF-8&chl='+u));})();">QRコード表示</a></li>
+   </ul>
+   <a data-rel="close" data-role="button" data-icon="delete">Close</a>
+   </div>
+  </div>
 </div> <!-- page -->
