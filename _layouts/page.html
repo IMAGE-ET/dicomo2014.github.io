@@ -19,7 +19,7 @@ layout: default
    <div class="panel-content">
    <h3>Option</h3>
    <ul data-role="listview">
-    <li><a href="javascript:(function(){var u=$.url();void(window.open('http://zxing.org/w/chart?cht=qr&chs=350x350&chld=L&choe=UTF-8&chl='+u));})();">QRコード表示</a></li>
+    <li><a href="javascript:(function(){var u=location.href;void(window.open('http://zxing.org/w/chart?cht=qr&chs=350x350&chld=L&choe=UTF-8&chl='+u));})();">QRコード表示</a></li>
    </ul>
    <a data-rel="close" data-role="button" data-icon="delete">Close</a>
    </div>
