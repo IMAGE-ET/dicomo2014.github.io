@@ -9,7 +9,7 @@ CACHE MANIFEST
 /session/
 /people/
 /access/
-{% for post in site.posts %}{{ post.id }}/
+{% for post in site.posts %}{{ post.url }}
 {% endfor %}
 /css/main.css
 /css/syntax.css
@@ -20,6 +20,7 @@ CACHE MANIFEST
 //code.jquery.com/mobile/1.4.2/images/ajax-loader.gif
 //cdnjs.cloudflare.com/ajax/libs/fullcalendar/1.6.4/fullcalendar.css
 //cdnjs.cloudflare.com/ajax/libs/fullcalendar/1.6.4/fullcalendar.min.js
+//cdnjs.cloudflare.com/ajax/libs/jquery.qrcode/1.0/jquery.qrcode.min.js
 
 NETWORK:
 *
