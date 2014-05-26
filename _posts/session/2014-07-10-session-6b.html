@@ -3,6 +3,8 @@ category: session
 layout: event
 title: 6B モバイルネットワーク
 pageid: 6b
+tags: normal
+location: 安土・桃山
 start: '2014-07-10 14:10:00'
 end: '2014-07-10 15:50:00'
 ---
@@ -10,20 +12,59 @@ end: '2014-07-10 15:50:00'
 <div data-role="collapsible">
 <h3>6B-1:NTMobileにおける仮想IPアドレスの管理方法の提案と評価</h3>
 <p>NTMobileにおける仮想IPアドレスの管理方法の提案と評価</p>
+<blockquote>我々は，IPv4/IPv6混在環境において通信接続性と移動透過性を同時に実現する技術としてNTMobile（Network Traversal with Mobility）を提案している．
+NTMobileでは，NTMobileの機能を実装した端末（NTM端末）に対して，実IPアドレスとして利用されないアドレス空間の中から一意な仮想IPアドレスを割り当てる必要がある．
+そのため，IPv4においては，十分な仮想IPv4アドレス数が確保できないという課題があった．
+また，IPv6においては，詳細な仮想IPアドレスの管理方法が未検討であった．
+そこで，本論文では仮想IPv4アドレスと仮想IPv6アドレスそれぞれにおいての管理手法について提案する．</blockquote>
+<ul data-role='listview'>
+<li>発表者：加古 将規(名城大)</li>
+<li>鈴木 秀和(名城大)</li>
+<li>内藤 克浩(愛知工大)</li>
+<li>渡邊 晃(名城大)</li>
+</ul>
 </div>
 <div data-role="collapsible">
 <h3>6B-2:NTMobileにおける組み込み機器向けトラフィック削減手法の提案</h3>
 <p>NTMobileにおける組み込み機器向けトラフィック削減手法の提案</p>
+<blockquote>Machine to Machine (M2M) 通信は, 今後の情報化社会を支える通信サービスとして注目されている．IPv4アドレスの枯渇は知られており，今後はIPv4 とIPv6 アドレスがM2M デバイスの普及とともに利用されると考えられる．しかし，IPv4 とIPv6 間には互換性がないことから，M2M 通信における接続性と相互接続性は新たな課題になると考えられる．著者らはIPv4/IPv6 の混在環境において通信の接続性と移動透過性を同時に実現するNetwork Traversal with Mobility (NTMobile) を提案してきた．NTMobile では，IPv4 ネットワークで頻繁に利用されるNAT の変換表内にあるNTMobile の接続情報を維持するために，User Datagram Protocol (UDP) ベースのKeep-Alive パケットを定期的に送信していた．既存方式では，一定時間内にパケットの送信を繰り返す必要があるため，組み込み機器などで利用される安価な無線パケット通信サービスを利用することが困難である．そこで，本研究ではNTMobileにNTMobile Notication Service (NNS) を導入する．NNS では，NTMobile ノードとNNS Server 間でTransmission Control Protocol (TCP) のコネクションを構築することにより，端末とサーバー間の通信を維持する．また，TCP を用いた場合，NAT の変換表の接続情報の維持時間がUDP と比較して長いことから，Keep-Alive パケットの送信頻度を大幅に間引くことが可能となり，接続情報維持を目的としたトラヒックの大幅な削減が可能となる．本研究では，提案方式をLinux 上に実装を行うことで，提案方式の有効性を実験により評価を行う．</blockquote>
+<ul data-role='listview'>
+<li>発表者：杉原 史人(三重大)</li>
+<li>内藤 克浩(愛知工大)</li>
+<li>鈴木 秀和(名城大)</li>
+<li>渡邊 晃(名城大)</li>
+<li>森 香津夫(三重大)</li>
+<li>小林 英雄(三重大)</li>
+</ul>
 </div>
 <div data-role="collapsible">
 <h3>6B-3:ユーザ空間における移動透過通信技術の設計と実装</h3>
 <p>ユーザ空間における移動透過通信技術の設計と実装</p>
+<blockquote>アブストラクト非公開</blockquote>
+<ul data-role='listview'>
+<li>発表者：鈴木 秀和(名城大)</li>
+<li>内藤 克浩(愛知工大)</li>
+<li>渡邊 晃(名城大)</li>
+</ul>
 </div>
 <div data-role="collapsible">
 <h3>6B-4:LTE網におけるサービス単位のトラヒック収容技術の検討</h3>
 <p>LTE網におけるサービス単位のトラヒック収容技術の検討</p>
+<blockquote>アブストラクト非公開</blockquote>
+<ul data-role='listview'>
+<li>発表者：鈴木 理基(KDDI研)</li>
+<li>渡里 雅史(KDDI研)</li>
+<li>横田 英俊(KDDI研)</li>
+<li>阿野 茂浩(KDDI研)</li>
+</ul>
 </div>
 <div data-role="collapsible">
 <h3>6B-5:Proxy Mobile IPv6のネットワーク性能向上のための一検討</h3>
 <p>Proxy Mobile IPv6のネットワーク性能向上のための一検討</p>
+<blockquote>ハンドオーバ技術の一つに，移動端末の通信経路をネットワーク主体で切り替えるProxy Mobile IPv6がある．Proxy Mobile IPv6はMobile IPv6やSIPモビリティといったハンドオーバ技術とは異なり，移動端末に特別な機能を実装することが不要であるという特徴がある．しかし，ネットワークにハンドオーバのための機能を実装するため，移動端末の全ての通信がプロキシサーバを経由するという問題がある．そこで本稿では，Proxy Mobile IPv6の問題をネットワーク性能の低下原因であると仮定するし，Software Defined Networkを前提としたネットワークを構築するためにOpenFlowを用いることで，位置管理サーバを経由しない通信を検討し提案する．</blockquote>
+<ul data-role='listview'>
+<li>発表者：渡辺 悠太(はこだて未来大)</li>
+<li>中村 嘉隆(はこだて未来大)</li>
+<li>高橋 修(はこだて未来大)</li>
+</ul>
 </div>

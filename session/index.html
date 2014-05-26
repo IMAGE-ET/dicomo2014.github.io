@@ -1,12 +1,22 @@
 ---
 layout: page
 title: Sessions
+pageid: session
 ---
-{% for cat in site.data.sessions %}
-<h2>{{cat.title}}</h2>
-<ul data-role="listview">
-{% for session in cat.list %}
-<li><a href="{{session.url}}">{{session.title}}</a></li>
-{% endfor %}
-</ul>
-{% endfor %}
+<h2>特別招待講演</h2>
+{% include session-list.html list=site.tags.sp %}
+
+<h2>一般セッション</h2>
+{% assign list = site.tags.normal | sort 'pageid' %}
+{% include session-list.html list=list %}
+
+<h2>デモセッション</h2>
+{% include session-list.html list=site.tags.ds %}
+
+<h2>アウトドアセッション</h2>
+{% include session-list.html list=site.tags.outdoor %}
+
+<h2>ナイトテクニカルセッション</h2>
+{% include session-list.html list=site.tags.ns %}
+
+{% include favorite-list.html storage="favevent" pageid="session" %}

@@ -3,6 +3,8 @@ category: session
 layout: event
 title: 4D クラウド
 pageid: 4d
+tags: normal
+location: 朝日
 start: '2014-07-10 08:30:00'
 end: '2014-07-10 10:10:00'
 ---
@@ -10,20 +12,53 @@ end: '2014-07-10 10:10:00'
 <div data-role="collapsible">
 <h3>4D-1:仮想化環境における読込み書込み比率を考慮した動的VMメモリ割当とその評価</h3>
 <p>仮想化環境における読込み書込み比率を考慮した動的VMメモリ割当とその評価</p>
+<blockquote>近年，データセンター等において多数のサーバ計算機が稼動するようになった．これに伴い，サーバの消費電力の増加，設置スペースの肥大化が問題となっている．この問題に対する解決策の一つとして，仮想化技術を用いて複数のサーバOSを一台の物理マシンに集約する手法がある．
+仮想化環境では，仮想マシン（VM）を停止させることなくメモリ割り当て量を変更することが可能である．一つの物理マシンにて複数のVMを稼働させ，それぞれのVMの負荷が時間により変化する場合は，負荷の変動に対応して動的にVMメモリ割り当て量を変更することが重要であると考えられる．
+仮想化ソフトウェアのXenには，動的にVMメモリ割り当て量を変更させる機能としてxenballoonがある．xenballoonがメモリ割り当てを行うために考慮するパラメータは，VM内のプロセスが使用するメモリのみであり，ページキャッシュとして利用されるメモリを考慮していない．そのため，I/O性能の低下を招くと考えられる．
+本研究では，Xenによって提供されるVMで，メモリ割り当て量，読込み書込み比率，キャッシュヒット率，I/O性能の関係性について調査を行う．そして，読込み書込み比率，キャッシュヒット率を考慮したVMメモリ割り当て量の最適化の手法の提案を行い，性能評価によりその有効性を示す．</blockquote>
+<ul data-role='listview'>
+<li>発表者：坂本 雅哉(工学院大)</li>
+<li>山口 実靖(工学院大)</li>
+</ul>
 </div>
 <div data-role="collapsible">
 <h3>4D-2:二重キャッシュ環境における負の参照の時間的局所性を考慮したキャッシュ管理手法</h3>
 <p>二重キャッシュ環境における負の参照の時間的局所性を考慮したキャッシュ管理手法</p>
+<blockquote>近年，クラウドコンピューティングの普及に伴い仮想化環境の重要性が高まっている．
+仮想化環境下において，ホストOSキャッシュ(下位キャッシュ)へのアクセスはゲストOSキャッシュ(上位キャッシュ)を介して行われる．このような二重キャッシュ環境下において上位キャッシュの置換アルゴリズムにLRUが使用されている場合，下位キャッシュにおいては一度アクセスされたデータが近い将来に再度アクセスされる可能性が低くなり，通常とは逆向きの負の参照の時間的局所性が存在することが実OSで確認されている．
+また，二重キャッシュ環境ではゲストOSキャッシュとホストOSキャッシュに同一のデータを重複して格納している可能性が高い．このように，ホストOSキャッシュは負の参照の時間的局所性やゲストOSキャッシュとのデータの重複により有効に機能しない．本研究では，仮想化環境に適したキャッシュ置換手法を提案し，評価によりその有効性を示す．</blockquote>
+<ul data-role='listview'>
+<li>発表者：杉本 洋輝(工学院大)</li>
+<li>山口 実靖(工学院大)</li>
+</ul>
 </div>
 <div data-role="collapsible">
 <h3>4D-3:A Just-in-Time Task Allocation Method and Its Simulation Result in Wearable-Mobile Computing Environment</h3>
 <p>A Just-in-Time Task Allocation Method and Its Simulation Result in Wearable-Mobile Computing Environment</p>
+<blockquote>Mobile Cloud Computing (MCC) is a hot research topic which tries to effectively use the resources for maximizing the throughput. However, MCC has not considered the experience of a user. And now wearable devices are becoming the next potential terminals, the time between two actions of using a wearable device is crucial for usability. Wearable-Mobile Cloud Computing (WMCC) is to improve user’s just-in-time experience. In this paper, we aim to improve the experience in WMCC Environment. We propose an effective method for task allocation which optimizes the waiting time of the user between two consecutive user actions, and perform simulation to show the performance of the solution.</blockquote>
+<ul data-role='listview'>
+<li>発表者：Zhitao Deng(Univ. of Aizu)</li>
+<li>Zixue Cheng(Univ. of Aizu)</li>
+<li>Peng Li(Univ. of Aizu)</li>
+</ul>
 </div>
 <div data-role="collapsible">
 <h3>4D-4:A Method for Executing a Program on a Wearable Device</h3>
 <p>A Method for Executing a Program on a Wearable Device</p>
+<blockquote>アブストラクト非公開</blockquote>
+<ul data-role='listview'>
+<li>譚 金華(会津大)</li>
+<li>周 &#39062;惠(会津大)</li>
+<li>程 子学(会津大)</li>
+</ul>
 </div>
 <div data-role="collapsible">
 <h3>4D-5:A Method for Dynamically Running Programs on a Wearable Device and Communication with a Mobile Phone by BLE</h3>
 <p>A Method for Dynamically Running Programs on a Wearable Device and Communication with a Mobile Phone by BLE</p>
+<blockquote>Nowadays wearable devices need to run variety kinds of programs, but resources in a wearable device are limited. We have already developed a wearable device called Magic Ring, which can conveniently control household appliances. In some particular situations, users are not convenient to use the mobile phones, for example, when taking crowded subway train, or an emergency message is coming. We want to use wearable device to control mobile phone in such situations, so we have issues on how to make connection and transmit programs between wearable device and mobile phone, and automatically loading programs on wearable device. As the first step, we discuss about the communication mode to make connection and solutions on the automatically loading problems into a wearable device.</blockquote>
+<ul data-role='listview'>
+<li>発表者：Qi Feng(Univ. of Aizu)</li>
+<li>Lei Jing(Univ. of Aizu)</li>
+<li>Zixue Cheng(Univ. of Aizu)</li>
+</ul>
 </div>
