@@ -111,7 +111,7 @@ EOT
           paperrow = paper.number[pid]
           right = paperrow[14]
 # 論文集発行日以降に変更
-#          if /許可$/ =~ right then
+#          unless /不許可$/ =~ right then
           if /常に許可$/ =~ right then
             abst = paperrow[13] 
             f.write "<blockquote>" + abst + "</blockquote>\n" if abst
