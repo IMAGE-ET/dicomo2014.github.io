@@ -12,7 +12,7 @@ session_data_file = "_data/DICOMO2014_session_data.csv"
 session_folder = "_posts/session"
 
 paper = PaperCache.new
-reader = CSV.open(session_data_file, "r", {:encoding=>"cp932:utf-8", :skip_blanks=>false, :row_sep=>"\n" })
+reader = CSV.open(session_data_file, "rt", {:encoding=>"cp932:utf-8", :skip_blanks=>false})
 sessions = {}
 detail = false
 year = 0
@@ -70,21 +70,29 @@ until reader.eof?
     else
       front["tags"] = ssid
     end
-    if room[ssid] then
-      front["location"] = room[ssid]
-    elsif room[ssid[1]] then
-      front["location"] = room[ssid[1]]
-    end
+#    if room[ssid] then
+#      front["location"] = room[ssid]
+#    elsif room[ssid[1]] then
+#      front["location"] = room[ssid[1]]
+#    end
     row = reader.shift
     # 時間
     if /^(?<sh>\d+):(?<sm>\d+)～(?<eh>\d+):(?<em>\d+)/ =~ row[0] then
       front["start"] = sprintf "%d-%02d-%02d %02d:%02d:00", year, month, day, sh, sm
       front["end"] = sprintf "%d-%02d-%02d %02d:%02d:00", year, month, day, eh, em
     else
-      printf "session %s error", session_file_name
+      printf "session %s time error", session_file_name
       puts
     end
-    File.open(session_file_name, "w") do |f|
+    row = reader.shift
+    # 部屋
+    if /^部屋:\s(?<room>.+)/ =~ row[0] then
+      front["location"] = room
+    else
+      printf "session %s room error", session_file_name
+      puts
+    end
+    File.open(session_file_name, "wb") do |f|
       f.write YAML.dump(front)
       f.write "---\n"
       row = reader.shift
@@ -113,7 +121,7 @@ EOT
 # 論文集発行日以降に変更
 #          unless /不許可$/ =~ right then
           if /常に許可$/ =~ right then
-            abst = paperrow[13] 
+            abst = paperrow[13].gsub(/\r/, '')
             f.write "<blockquote>" + abst + "</blockquote>\n" if abst
           else
             f.write "<blockquote>アブストラクト非公開</blockquote>\n"

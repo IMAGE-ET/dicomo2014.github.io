@@ -1,0 +1,22 @@
+---
+layout: page
+title: 飛天
+id: room-a
+---
+<h3>部屋：飛天</h3>
+<link rel="stylesheet" href="http://www.consulenza-web.com/jquery/touchpanview/jquery.touchpanview.css">
+<script src="http://www.consulenza-web.com/jquery/_commons/jquery.easing.js"></script>
+<script src="http://www.consulenza-web.com/jquery/touchpanview/jquery.jgestures.js"></script>
+<script src="http://www.consulenza-web.com/jquery/touchpanview/jquery.touchpanview.js"></script>
+
+<img src="senkei-1f.png" id="panview" width="1282" height="1785"/>
+
+<script type="text/javascript">
+$("#room-a").on("pagecreate", function() {
+  $("#panview").touchPanView({width: 400, height: 400,
+    pins: [{x: 43, y: 23, point: 'center', title: "飛天"}],
+    pinDefaults: {},
+    startZoomedOut: true
+  });
+});
+</script>

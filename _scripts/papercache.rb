@@ -13,7 +13,7 @@ class PaperCache
     @list = []
     @author = {}
     @number = {}
-    reader = CSV.open($paper_data_file, "r", {:encoding=>"cp932:utf-8", :skip_blanks=>false})
+    reader = CSV.open($paper_data_file, "rt", {:encoding=>"cp932:utf-8", :skip_blanks=>false})
     puts "reading paper file: " + $paper_data_file
     # タイトル
     dummy = reader.shift if not reader.eof?
