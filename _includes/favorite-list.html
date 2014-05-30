@@ -1,11 +1,14 @@
 <script>
-$("#{{include.pageid}}").on("pagecreate", function() {
-  $(".favstar").html("");
+if ($.mobile.favupdate{{include.pageid}}) {
+  $(document).off('pagecontainershow', $.mobile.favupdate{{include.pageid}});
+}
+$.mobile.favupdate{{include.pageid}} = function(e, ui) {
   if (window.localStorage && window.localStorage.getItem("{{include.storage}}")) {
     var favj = JSON.parse(window.localStorage.getItem("{{include.storage}}"));
     for (var i in favj) {
       $("#star-" + i).html("{{site.favorite.star}}");
     }
   }
-});
+}
+$(document).on('pagecontainershow', $.mobile.favupdate{{include.pageid}});
 </script>

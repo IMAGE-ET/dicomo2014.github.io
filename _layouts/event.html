@@ -5,7 +5,7 @@ layout: page
 <ul data-role="listview">
 <li>日時: {{ page.start | date: "%m/%d" }} {{ page.start | date: "%H時%M分" }}-{{ page.end | date: "%H時%M分" }}</li>
 {% if page.location %}
-<li>場所: {{ page.location }}</li>
+<li><a href="/access/{{page.locationid}}">場所: {{ page.location }}</a></li>
 {% endif %}
 </ul>
 {% include favorite-button.html storage="favevent" pageid=page.pageid %}

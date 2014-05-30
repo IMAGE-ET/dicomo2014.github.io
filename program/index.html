@@ -20,8 +20,20 @@ $("#{{ date.id }}").on("click", function() {
   $("#calendar").fullCalendar('gotoDate',{{ date.year }},{{ date.month | minus: 1 }},{{ date.day }});
 });
 {% endfor %}
+$("#program").on("swipeleft", function(event) {
+  $("#calendar").fullCalendar('next');
+});
+$("#program").on("swiperight", function(event) {
+  $("#calendar").fullCalendar('prev');
+});
 
-$(document).on('pagecontainershow', ":mobile-pagecontainer", function() {
+if ($.mobile.confcalendarupdate) {
+  $(document).off('pagecontainershow', $.mobile.confcalendarupdate);
+}
+$.mobile.confcalendarupdate = function(e, ui) {
+//  if (ui.prevPage[0] && ui.prevPage[0].id != 'program') {
+//    return;
+//  }
   $("#calendar").empty();
   var eventlist = {% include events.json %};
   if (window.localStorage && window.localStorage.getItem("favevent")) {
@@ -45,15 +57,7 @@ $(document).on('pagecontainershow', ":mobile-pagecontainer", function() {
     height: 1024,
     eventTextColor: "white"
   });
-});
-$("#program").on("pagecreate", function() {
-  $("#program").off("swipeleft");
-  $("#program").on("swipeleft", function(event) {
-    $("#calendar").fullCalendar('next');
-  });
-  $("#program").off("swiperight");
-  $("#program").on("swiperight", function(event) {
-    $("#calendar").fullCalendar('prev');
-  });
-});
+  $("#calendar").fullCalendar("refresh");
+}
+$(document).on('pagecontainershow', $.mobile.confcalendarupdate);
 </script>

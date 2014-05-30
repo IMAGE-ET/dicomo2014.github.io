@@ -9,7 +9,7 @@ require 'yaml'
 require './_scripts/papercache.rb'
 
 session_data_file = "_data/DICOMO2014_session_data.csv"
-session_folder = "_posts/session"
+session_folder = "_posts/generated"
 
 paper = PaperCache.new
 reader = CSV.open(session_data_file, "rt", {:encoding=>"cp932:utf-8", :skip_blanks=>false})
