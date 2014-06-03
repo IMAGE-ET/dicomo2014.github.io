@@ -18,6 +18,9 @@ id: program
 {% endif %}
 $("#{{ date.id }}").on("click", function() {
   $("#calendar").fullCalendar('gotoDate',{{ date.year }},{{ date.month | minus: 1 }},{{ date.day }});
+  $.mobile.confcalendaryear = {{date.year}};
+  $.mobile.confcalendarmonth = {{date.month}};
+  $.mobile.confcalendarday = {{date.day}};
 });
 {% endfor %}
 $("#program").on("swipeleft", function(event) {
@@ -31,9 +34,10 @@ if ($.mobile.confcalendarupdate) {
   $(document).off('pagecontainershow', $.mobile.confcalendarupdate);
 }
 $.mobile.confcalendarupdate = function(e, ui) {
-//  if (ui.prevPage[0] && ui.prevPage[0].id != 'program') {
-//    return;
-//  }
+  var page = $(":mobile-pagecontainer").pagecontainer("getActivePage");
+  if (page && page.attr("id") != 'program') {
+    return;
+  }
   $("#calendar").empty();
   var eventlist = {% include events.json %};
   if (window.localStorage && window.localStorage.getItem("favevent")) {
@@ -45,19 +49,22 @@ $.mobile.confcalendarupdate = function(e, ui) {
       }
     }
   }
-
+  if (! $.mobile.confcalendaryear) {
+    $.mobile.confcalendaryear = {{first_date.year}};
+    $.mobile.confcalendarmonth = {{first_date.month}};
+    $.mobile.confcalendarday = {{first_date.day}};
+  }
   $("#calendar").fullCalendar({
     events: eventlist,
     defaultView: "agendaDay",
     allDayDefault: false,
-    year: {{ first_date.year }},
-    month: {{ first_date.month | minus: 1 }},
-    date: {{ first_date.day }},
+    year: $.mobile.confcalendaryear,
+    month: $.mobile.confcalendarmonth - 1,
+    date: $.mobile.confcalendarday,
     minTime: "7:00",
     height: 1024,
     eventTextColor: "white"
   });
-  $("#calendar").fullCalendar("refresh");
 }
 $(document).on('pagecontainershow', $.mobile.confcalendarupdate);
 </script>
