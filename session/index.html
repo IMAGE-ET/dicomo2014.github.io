@@ -3,20 +3,25 @@ layout: page
 title: Sessions
 pageid: session
 ---
-<h2>特別招待講演</h2>
+<form>
+  <input type="text" data-type="search" id="session-filter-input" />
+</form>
+<ul data-role="listview" data-filter="true" data-input="#session-filter-input">
+<li data-role="list-divider">特別招待講演</li>
 {% include session-list.html list=site.tags.sp %}
 
-<h2>一般セッション</h2>
+<li data-role="list-divider">一般セッション</li>
 {% assign list = site.tags.normal | sort 'pageid' %}
 {% include session-list.html list=list %}
 
-<h2>デモセッション</h2>
+<li data-role="list-divider">デモセッション</li>
 {% include session-list.html list=site.tags.ds %}
 
-<h2>アウトドアセッション</h2>
+<li data-role="list-divider">アウトドアセッション</li>
 {% include session-list.html list=site.tags.outdoor %}
 
-<h2>ナイトテクニカルセッション</h2>
+<li data-role="list-divider">ナイトテクニカルセッション</li>
 {% include session-list.html list=site.tags.ns %}
+</ul>
 
 {% include favorite-list.html storage="favevent" pageid="session" %}

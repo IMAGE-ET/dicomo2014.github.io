@@ -24,15 +24,11 @@ $(".pagefav").on("change", function() {
     }
     favj[i] = new Date();
     window.localStorage.setItem("{{include.storage}}", JSON.stringify(favj));
-    $("#star-" + i).html("{{site.favorite.star}}");
-//    if ($.mobile.confcalendarupdate) {$.mobile.confcalendarupdate();}
   } else {
     // remove from favorite
     var favj = JSON.parse(window.localStorage.getItem("{{include.storage}}"));
     delete favj[i];
     window.localStorage.setItem("{{include.storage}}", JSON.stringify(favj));
-    $("#star-" + i).html("");
-//    if ($.mobile.confcalendarupdate) {$.mobile.confcalendarupdate();}
   }
 });
 </script>

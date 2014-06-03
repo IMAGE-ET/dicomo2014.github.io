@@ -1,13 +1,12 @@
 <script>
-if ($.mobile.favupdate{{include.pageid}}) {
-  $(document).off('pagecontainershow', $.mobile.favupdate{{include.pageid}});
-}
+if (! $.mobile.favupdate{{include.pageid}}) {
 $.mobile.favupdate{{include.pageid}} = function(e, ui) {
   var page = $(":mobile-pagecontainer").pagecontainer("getActivePage");
   if (page && page.attr("id") != '{{include.pageid}}') {
     return;
   }
   if (window.localStorage && window.localStorage.getItem("{{include.storage}}")) {
+    $(".favstar").html("");
     var favj = JSON.parse(window.localStorage.getItem("{{include.storage}}"));
     for (var i in favj) {
       $("#star-" + i).html("{{site.favorite.star}}");
@@ -15,4 +14,5 @@ $.mobile.favupdate{{include.pageid}} = function(e, ui) {
   }
 }
 $(document).on('pagecontainershow', $.mobile.favupdate{{include.pageid}});
+} //if
 </script>

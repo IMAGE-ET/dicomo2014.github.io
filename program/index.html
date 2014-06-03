@@ -30,9 +30,7 @@ $("#program").on("swiperight", function(event) {
   $("#calendar").fullCalendar('prev');
 });
 
-if ($.mobile.confcalendarupdate) {
-  $(document).off('pagecontainershow', $.mobile.confcalendarupdate);
-}
+if (! $.mobile.confcalendarupdate) {
 $.mobile.confcalendarupdate = function(e, ui) {
   var page = $(":mobile-pagecontainer").pagecontainer("getActivePage");
   if (page && page.attr("id") != 'program') {
@@ -67,4 +65,5 @@ $.mobile.confcalendarupdate = function(e, ui) {
   });
 }
 $(document).on('pagecontainershow', $.mobile.confcalendarupdate);
+} //if
 </script>

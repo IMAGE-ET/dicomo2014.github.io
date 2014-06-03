@@ -1,5 +1,3 @@
-<ul data-role="listview">
 {% for item in include.list %}
 <li><a href="{{item.url}}"><span class="favstar" id="star-{{item.pageid}}"></span>{{item.title}}<span class="ui-li-count">{{item.start|date:"%m/%d %H:%M"}}</span></a></li>
 {% endfor %}
-</ul>
