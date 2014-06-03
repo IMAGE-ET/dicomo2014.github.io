@@ -19,18 +19,20 @@ layout: default
    <div class="panel-content">
    <h3>Option</h3>
    <ul data-role="listview">
-    <li><a href="#popupqrcode-{{page.pageid}}" data-rel="popup" data-position-to="window">QRコード表示</a></li>
+    <li><a id="buttonqrcode-{{page.pageid}}" data-rel="popup">QRコード表示</a></li>
    </ul>
    <a data-rel="close" data-role="button" data-icon="delete">Close</a>
    </div>
   </div>
-<div data-role="popup" id="popupqrcode-{{page.pageid}}">
+<div data-role="popup" id="popupqrcode-{{page.pageid}}" data-position-to="window">
 <div id="qrcodeimg-{{page.pageid}}"></div>
 <a href="#" data-rel="back" data-role="button">Close</a>
 </div>
 <script>
-  $("#popupqrcode-{{page.pageid}}").on("popupcreate", function() {
-    $("#qrcodeimg-{{page.pageid}}").qrcode(location.href);
+  $("#buttonqrcode-{{page.pageid}}").on("click", function() {
+    $("#qrcodeimg-{{page.pageid}}").html("");
+    $("#qrcodeimg-{{page.pageid}}").qrcode($.mobile.path.getLocation());
+    $("#popupqrcode-{{page.pageid}}").popup("open");
   });
 </script>
 </div> <!-- page -->
