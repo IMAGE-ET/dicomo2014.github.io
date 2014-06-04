@@ -18,13 +18,15 @@ DICOMOシンポジウム用に作成していますが、
 * [jQuery 2.1.0](http://jquery.com/)
 * [jQuery Mobile 1.4.2](http://jquerymobile.com/)
 * [FullCalendar Plugin 1.6.4](http://arshaw.com/fullcalendar/)
+* [TouchPanView Plugin](http://www.consulenza-web.com/jquery/touchpanview/)
 
+## 動作環境
 
-## 作者
+以下の環境での動作を確認しています。
 
-以下は開発に関わった作者の一覧です。
-
-* <https://github.com/yoshimov>
+* Android 2.3 (IS11CA)
+* Android 4.4.2 (Nexus 7)
+* iPhone 5S
 
 ## ソース
 

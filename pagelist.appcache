@@ -4,15 +4,20 @@ layout: none
 CACHE MANIFEST
 # {{ site.time }}
 /
-/README.html
 /program/
 /session/
 /people/
 /access/
+{% for page in site.pages %}{{ page.url }}
+{% endfor %}
 {% for post in site.posts %}{{ post.url }}
 {% endfor %}
 /css/main.css
 /css/syntax.css
+/css/jquery.touchpanview.css
+/js/jquery.touchpanview.js
+/images/touchpanview-pin.png
+{{site.roommap.image}}
 //code.jquery.com/jquery-2.1.0.min.js
 //code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css
 //code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js

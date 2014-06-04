@@ -16,6 +16,11 @@ favorite:
   addmessage: "お気に入りに追加"
   removemessage: "<font color='orange'>★</font>お気に入りを解除"
 
+roommap:
+  image: /images/senkei-bw.png
+  width: 3516
+  height: 3041
+
 # navigation bar settings
 
 navigation:
