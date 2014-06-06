@@ -15,10 +15,11 @@ DICOMOシンポジウム用に作成していますが、
 以下のOSSを利用しています。
 
 * [Jekyll](http://jekyllrb.com/)
-* [jQuery 2.1.0](http://jquery.com/)
+* [jQuery 2.1.1](http://jquery.com/)
 * [jQuery Mobile 1.4.2](http://jquerymobile.com/)
 * [FullCalendar Plugin 1.6.4](http://arshaw.com/fullcalendar/)
 * [TouchPanView Plugin](http://www.consulenza-web.com/jquery/touchpanview/)
+* [jQuery-Mobile-Events](https://github.com/benmajor/jQuery-Mobile-Events)
 
 ## 動作環境
 
