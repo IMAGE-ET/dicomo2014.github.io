@@ -1,53 +1,77 @@
 ---
 category: session
-layout: event
+layout: session
 title: 4B アドホックネットワーク
 pageid: 4b
 tags: normal
+roomid: b
 start: '2014-07-10 08:30:00'
 end: '2014-07-10 10:10:00'
 location: 安土・桃山
+chair: 内山 彰 (阪大)
+chairpid: '4304'
+paper:
+- title: VANETにおける類似位置指定情報要求の集約に基づく情報配信手法の基礎評価
+  psid: 4B-1
+  paperid: '1247'
+  abstract: "車両間で事故や渋滞などの道路交通情報の共有を行い，ドライバーに対して遠隔地の情報を提供し運転を支援するための技術開発が進められている．筆者らはVANETにおいて，ドライバーが興味を持つ地点の現在の情報を，車両間通信で伝達しドライバーへ提供するシステムの開発を行っている．\r\n本稿では，必要とされている位置に依存した情報（例として車載カメラによる撮影画像）を通信トラフィックを抑制しつつ車々間通信を用いて配信するために，情報の需要と供給の程度に基づき各車両が配信する情報を選択する手法，Demand
+    mapベースデータ配信手法についてSoft-state sketchを応用した実現方法について検討し，同手法に対する基礎的な評価を検討する．\r\nシミュレーションの結果，発生する要求を反映するDemand
+    mapを各車両が生成，共有できることを確かめた．\r\nまた，車両密度や需要の有効期限といった条件が，反映する需要の精度について影響があることが分かった．\t"
+  author:
+  - name: 新美 雄也
+    org: 静岡大
+    presenter: true
+    pid: '4096'
+  - name: 石原 進
+    org: 静岡大
+    pid: '4013'
+- title: Inter-Contact Time Study for MANETs with Random Walk Mobility
+  psid: 4B-2
+  paperid: '1164'
+  abstract: In mobile ad hoc networks (MANETs), the inter-contact time, the time interval
+    between two consecutive contacts of two mobile nodes, has been shown to have significant
+    impact on network performances. Analyzing the inter-contact time in MANETs serves
+    as the foundation for network performance evaluation and efficient network design.
+    Despite lots of research efforts, accurate analytical results of the inter-contact
+    time still remain elusive. As a step toward this direction, this paper provides
+    theoretical analysis on the inter-contact time in a MANET with random walk mobility.
+    Specifically, we first develop a powerful theoretical framework based on quasi-birth-and-death
+    (QBD) process to characterize the mobility process of mobile nodes in the concerned
+    MANET. With the help of this theoretical framework, we then derive accurate analytical
+    results of the cumulative distribution function as well as mean and variance of
+    the inter-contact time. Finally, we carry out numerical studies to investigate
+    the impact of network parameters on inter-contact time performance.
+  author:
+  - name: Juntao Gao
+    org: NAIST
+    presenter: true
+  - name: Xiaohong Jiang
+    org: はこだて未来大
+- title: MANET上のトラフィック状況をメトリクスとしたクラスタベースルーティングアルゴリズムの提案
+  psid: 4B-3
+  paperid: '1221'
+  abstract: "端末の小型化や無線技術の発展によって端末同士が移動しながらも通信できるMANET(Mobile Ad-hoc Network)はさまざまな用途で用いられ始めており，大規模なMANETを対象とした研究が多く行われている．MANETに代表される高移動頻度通信において安定した通信を実現するために用いられる手法としてクラスタリングを用いたルーティングが挙げられる．クラスタリングを用いることで，経路の作成を効率化でき，輻輳を防ぐことができる．これを発展させたCluster-by-Clusterルーティングでは経路作成の処理を効率化し，ルーティングオーバヘッドの削減やパケット到達率の向上などいった効果が得られた．しかし，各ノードの通信状況の変化には対応できず，単一経路をそのまま使い続けるため，複数の通信が混在する環境においてはネットワーク全体のスループットが低下する可能性があるという問題がある．\r\n本稿では，Cluster-by-Clusterルーティングアルゴリズムへ経路選択機能を設け，トラフィックを中心とした指標により柔軟な経路選択を可能とし，ネットワーク全体のスループットの向上を目指す．"
+  author:
+  - name: 浅沼 佑紀
+    org: はこだて未来大
+    presenter: true
+    pid: '4053'
+  - name: 中村 嘉隆
+    org: はこだて未来大
+    pid: '4394'
+  - name: 高橋 修
+    org: はこだて未来大
+    pid: '4342'
+- title: 複数の浮流無線センサノードを用いた下水管内検査システムのための下水管内無線リンク品質の調査
+  psid: 4B-4
+  paperid: '1190'
+  abstract: "近年，日本では下水管の老朽化が深刻化し，検査と整備が急務となっている．下水管の検査は主に目視，ファイバースコープ，有線接続された自走ロボットにより行われているが，金銭的，人的に高いコストを伴う．近年開発された有線接続を必要としない自走ロボットや浮流式ビデオカメラは，有線による周辺機器へのデータ伝送を利用せずに検査を行うため，低コストで取り回しが容易であるが，機器を回収した後に検査結果を確認しなければならないため，再検査の必要性を判定するまでに時間がかかる．管内映像のリアルタイムでの確認を可能とするため，筆者らは複数の浮流無線センサノード群による下水管検査システムを提案している．\r\n本システムの設計のため，実運用中の下水管および実験用下水管路において，IEEE802.11gとIEEE802.15.4（2.4GHz）の無線通信端末を用いた無線通信可能距離測定実験を行った．この結果，2.4GHz帯域，出力10mWにおける無線通信可能距離は3.15m未満であった．"
+  author:
+  - name: 長島 大貴
+    org: 静岡大
+    presenter: true
+    pid: '4074'
+  - name: 石原 進
+    org: 静岡大
+    pid: '4013'
 ---
-座長: 内山 彰 (阪大)
-<div data-role="collapsible">
-<h3>4B-1:VANETにおける類似位置指定情報要求の集約に基づく情報配信手法の基礎評価</h3>
-<p>VANETにおける類似位置指定情報要求の集約に基づく情報配信手法の基礎評価</p>
-<blockquote>車両間で事故や渋滞などの道路交通情報の共有を行い，ドライバーに対して遠隔地の情報を提供し運転を支援するための技術開発が進められている．筆者らはVANETにおいて，ドライバーが興味を持つ地点の現在の情報を，車両間通信で伝達しドライバーへ提供するシステムの開発を行っている．
-本稿では，必要とされている位置に依存した情報（例として車載カメラによる撮影画像）を通信トラフィックを抑制しつつ車々間通信を用いて配信するために，情報の需要と供給の程度に基づき各車両が配信する情報を選択する手法，Demand mapベースデータ配信手法についてSoft-state sketchを応用した実現方法について検討し，同手法に対する基礎的な評価を検討する．
-シミュレーションの結果，発生する要求を反映するDemand mapを各車両が生成，共有できることを確かめた．
-また，車両密度や需要の有効期限といった条件が，反映する需要の精度について影響があることが分かった．	</blockquote>
-<ul data-role='listview'>
-<li>発表者：新美 雄也(静岡大)</li>
-<li>石原 進(静岡大)</li>
-</ul>
-</div>
-<div data-role="collapsible">
-<h3>4B-2:Inter-Contact Time Study for MANETs with Random Walk Mobility</h3>
-<p>Inter-Contact Time Study for MANETs with Random Walk Mobility</p>
-<blockquote>In mobile ad hoc networks (MANETs), the inter-contact time, the time interval between two consecutive contacts of two mobile nodes, has been shown to have significant impact on network performances. Analyzing the inter-contact time in MANETs serves as the foundation for network performance evaluation and efficient network design. Despite lots of research efforts, accurate analytical results of the inter-contact time still remain elusive. As a step toward this direction, this paper provides theoretical analysis on the inter-contact time in a MANET with random walk mobility. Specifically, we first develop a powerful theoretical framework based on quasi-birth-and-death (QBD) process to characterize the mobility process of mobile nodes in the concerned MANET. With the help of this theoretical framework, we then derive accurate analytical results of the cumulative distribution function as well as mean and variance of the inter-contact time. Finally, we carry out numerical studies to investigate the impact of network parameters on inter-contact time performance.</blockquote>
-<ul data-role='listview'>
-<li>発表者：Juntao Gao(NAIST)</li>
-<li>Xiaohong Jiang(はこだて未来大)</li>
-</ul>
-</div>
-<div data-role="collapsible">
-<h3>4B-3:MANET上のトラフィック状況をメトリクスとしたクラスタベースルーティングアルゴリズムの提案</h3>
-<p>MANET上のトラフィック状況をメトリクスとしたクラスタベースルーティングアルゴリズムの提案</p>
-<blockquote>端末の小型化や無線技術の発展によって端末同士が移動しながらも通信できるMANET(Mobile Ad-hoc Network)はさまざまな用途で用いられ始めており，大規模なMANETを対象とした研究が多く行われている．MANETに代表される高移動頻度通信において安定した通信を実現するために用いられる手法としてクラスタリングを用いたルーティングが挙げられる．クラスタリングを用いることで，経路の作成を効率化でき，輻輳を防ぐことができる．これを発展させたCluster-by-Clusterルーティングでは経路作成の処理を効率化し，ルーティングオーバヘッドの削減やパケット到達率の向上などいった効果が得られた．しかし，各ノードの通信状況の変化には対応できず，単一経路をそのまま使い続けるため，複数の通信が混在する環境においてはネットワーク全体のスループットが低下する可能性があるという問題がある．
-本稿では，Cluster-by-Clusterルーティングアルゴリズムへ経路選択機能を設け，トラフィックを中心とした指標により柔軟な経路選択を可能とし，ネットワーク全体のスループットの向上を目指す．</blockquote>
-<ul data-role='listview'>
-<li>発表者：浅沼 佑紀(はこだて未来大)</li>
-<li>中村 嘉隆(はこだて未来大)</li>
-<li>高橋 修(はこだて未来大)</li>
-</ul>
-</div>
-<div data-role="collapsible">
-<h3>4B-4:複数の浮流無線センサノードを用いた下水管内検査システムのための下水管内無線リンク品質の調査</h3>
-<p>複数の浮流無線センサノードを用いた下水管内検査システムのための下水管内無線リンク品質の調査</p>
-<blockquote>近年，日本では下水管の老朽化が深刻化し，検査と整備が急務となっている．下水管の検査は主に目視，ファイバースコープ，有線接続された自走ロボットにより行われているが，金銭的，人的に高いコストを伴う．近年開発された有線接続を必要としない自走ロボットや浮流式ビデオカメラは，有線による周辺機器へのデータ伝送を利用せずに検査を行うため，低コストで取り回しが容易であるが，機器を回収した後に検査結果を確認しなければならないため，再検査の必要性を判定するまでに時間がかかる．管内映像のリアルタイムでの確認を可能とするため，筆者らは複数の浮流無線センサノード群による下水管検査システムを提案している．
-本システムの設計のため，実運用中の下水管および実験用下水管路において，IEEE802.11gとIEEE802.15.4（2.4GHz）の無線通信端末を用いた無線通信可能距離測定実験を行った．この結果，2.4GHz帯域，出力10mWにおける無線通信可能距離は3.15m未満であった．</blockquote>
-<ul data-role='listview'>
-<li>発表者：長島 大貴(静岡大)</li>
-<li>石原 進(静岡大)</li>
-</ul>
-</div>

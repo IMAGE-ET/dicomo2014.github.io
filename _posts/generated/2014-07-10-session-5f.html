@@ -1,61 +1,94 @@
 ---
 category: session
-layout: event
+layout: session
 title: 5F クラウドソーシングとネットワークサービス
 pageid: 5f
 tags: normal
+roomid: f
 start: '2014-07-10 10:30:00'
 end: '2014-07-10 12:10:00'
 location: 末広
+chair: 市村 哲 (東京工科大)
+chairpid: '4032'
+paper:
+- title: 多様な通信環境に適用可能なデータ転送高速化技術
+  psid: 5F-1
+  paperid: '1017'
+  author:
+  - name: 亀山 裕亮
+    org: 富士通研
+    presenter: true
+    pid: '4290'
+  - name: 佐沢 真一
+    org: 富士通研
+  - name: 橋間 正芳
+    org: 富士通研
+- title: 'PrinterSurf: クラウド型プリンタ共有システムの実装と評価'
+  psid: 5F-2
+  paperid: '1196'
+  abstract: 近年，様々なネット印刷サービスやプリンタ共有システムが登場し，手元にプリンタが無い状態での印刷が可能となりつつある．しかし，既存のサービスやシステムでは，プリンタの利用，公開双方が容易に行われているとは言い難い．本研究では，誰でも容易にプリンタを公開，利用可能であり，大規模な利用に対応したクラウド型プリンタ共有システムPrinterSurfの開発を行った．
+  author:
+  - name: 吉田 忍
+    org: 岩手県立大
+    presenter: true
+    pid: '4179'
+  - name: 西岡 大
+    org: 岩手県立大
+    pid: '4226'
+  - name: 村山 優子
+    org: 岩手県立大
+- title: Making ICT Based Services Accessible for the Last Mile People
+  psid: 5F-3
+  paperid: '1239'
+  abstract: Around 70% of the populations in developing countries live in the rural,
+    remote villages. Although growth of the cellular phone network for the last two
+    decades enables such last mile people to access the internet, use of ICT based
+    services through internet is not still popular to them. ICT based services such
+    as e-government, e-health, or e-learning have a great potential to improve their
+    quality of life. The authors describe general challenges to realize ICT based
+    services, which are poor internet accessibility especially for bulk data contents,
+    poor literacy of the users, and low financial affordability. The authors present
+    a solution using delay tolerant network (or DTN for short) to overcome these challenges.
+    Bangladesh, as a representative of the developing country, is taken as an example
+    to design the solution with consideration of the country-specific, social aspects.
+    The solution utilizes the public local transportation system for bearers of DTN
+    bundles and the village information center as access points to the ICT based services
+    in remote villages for sustainable service delivery.
+  author:
+  - name: Md. Asifur Rahman
+    org: 九大
+    presenter: true
+  - name: 中西 恒夫
+    org: 福岡大
+  - name: 福田 晃
+    org: 九大
+- title: クラウドソーシングを用いた高精度対訳作成のための低品質翻訳の活用
+  psid: 5F-4
+  paperid: '1194'
+  abstract: 現在，グローバル化による多言語間コミュニケーションの機会が増加している．しかし，多言語間での正確な情報共有は十分に行われていない．正確な多言語支援が求められる場では，多言語用例対訳が多く用いられている．用例対訳の作成には多言語の知識が必要となるが，多言語話者の人数は少なく，大きな負担がかかっている．そこで本稿では，複数の機械翻訳器と単言語話者を用いて多言語用例対訳候補の作成を行う，高精度対訳作成手法の提案を行う．また，同一文を作成したWorkerの数とコサイン類似度を用いた正確性の高い対訳文の抽出を行った．本稿の貢献は以下である．(1)
+    複数の機械翻訳器とクラウドソーシング上の単言語話者で多言語用例対訳の作成を行う高精度対訳作成手法を提案し，実現した．(2) 1つの機械翻訳器を使用する従来手法よりも複数の機械翻訳器を使用する提案手法の方が，正確な対訳候補文の作成割合が高くなることを示した．(3)
+    最多対訳候補よりもコサイン類似度を用いた対訳文の抽出の方が，正確な対訳文を多く抽出できることを示した．(4) 翻訳文の重複がある場合は，翻訳文の正確性は高いが対訳候補文の正確性は下がることを示した．
+  author:
+  - name: 福島 拓
+    org: 静岡大
+    presenter: true
+    pid: '4220'
+  - name: 吉野 孝
+    org: 和歌山大
+    pid: '4217'
+- title: クラウドソーシングを用いた応答用例対作成手法の提案
+  psid: 5F-5
+  paperid: '1214'
+  abstract: "現在，グローバル化によって多言語間コミュニケーションの機会が増加している．しかし，多言語間での正確な共有は困難であり，医療分野などの正確な情報の共有が求められる場合には十分な正確性の確保された用例対訳が使用されている．しかし，必要な用例対訳は多く，十分な数の用例対訳の収集は困難である．現在我々は，機械翻訳とクラウドソーシングを用いて誤った機械翻訳が行われた用例の訂正を依頼することで，単言語話者でも正確な用例対訳を作成が可能となる用例対訳作成手法の研究を行っている．しかし，作業者が機械翻訳文から翻訳前の用例の意図を推測しなければならず，正確な訂正文の取得が可能となる用例はほんの一部である．\r\nそこで本稿では，訂正を行う多言語テキストペアを作業者に提示する際に，作業者が翻訳前の用例の意図をより推測しやすくするために，評価対象の多言語テキストペアを会話文として提示し，応答用例対を作成する手法を提案する．本稿の貢献は，クラウドソーシングを用いて作成した質問と回答の対をクラウドソーシングと機械翻訳に利用することで，一部の多言語テキストペアにおいて，会話の支援に有用な応答用例対の作成が行える可能性を示した点である．"
+  author:
+  - name: 山本 里美
+    org: 和歌山大
+    presenter: true
+    pid: '4227'
+  - name: 福島 拓
+    org: 静岡大
+    pid: '4220'
+  - name: 吉野 孝
+    org: 和歌山大
+    pid: '4217'
 ---
-座長: 市村 哲 (東京工科大)
-<div data-role="collapsible">
-<h3>5F-1:多様な通信環境に適用可能なデータ転送高速化技術</h3>
-<p>多様な通信環境に適用可能なデータ転送高速化技術</p>
-<blockquote>アブストラクト非公開</blockquote>
-<ul data-role='listview'>
-<li>発表者：亀山 裕亮(富士通研)</li>
-<li>佐沢 真一(富士通研)</li>
-<li>橋間 正芳(富士通研)</li>
-</ul>
-</div>
-<div data-role="collapsible">
-<h3>5F-2:PrinterSurf: クラウド型プリンタ共有システムの実装と評価</h3>
-<p>PrinterSurf: クラウド型プリンタ共有システムの実装と評価</p>
-<blockquote>近年，様々なネット印刷サービスやプリンタ共有システムが登場し，手元にプリンタが無い状態での印刷が可能となりつつある．しかし，既存のサービスやシステムでは，プリンタの利用，公開双方が容易に行われているとは言い難い．本研究では，誰でも容易にプリンタを公開，利用可能であり，大規模な利用に対応したクラウド型プリンタ共有システムPrinterSurfの開発を行った．</blockquote>
-<ul data-role='listview'>
-<li>発表者：吉田 忍(岩手県立大)</li>
-<li>西岡 大(岩手県立大)</li>
-<li>村山 優子(岩手県立大)</li>
-</ul>
-</div>
-<div data-role="collapsible">
-<h3>5F-3:Making ICT Based Services Accessible for the Last Mile People</h3>
-<p>Making ICT Based Services Accessible for the Last Mile People</p>
-<blockquote>Around 70% of the populations in developing countries live in the rural, remote villages. Although growth of the cellular phone network for the last two decades enables such last mile people to access the internet, use of ICT based services through internet is not still popular to them. ICT based services such as e-government, e-health, or e-learning have a great potential to improve their quality of life. The authors describe general challenges to realize ICT based services, which are poor internet accessibility especially for bulk data contents, poor literacy of the users, and low financial affordability. The authors present a solution using delay tolerant network (or DTN for short) to overcome these challenges. Bangladesh, as a representative of the developing country, is taken as an example to design the solution with consideration of the country-specific, social aspects. The solution utilizes the public local transportation system for bearers of DTN bundles and the village information center as access points to the ICT based services in remote villages for sustainable service delivery.</blockquote>
-<ul data-role='listview'>
-<li>発表者：Md. Asifur Rahman(九大)</li>
-<li>中西 恒夫(福岡大)</li>
-<li>福田 晃(九大)</li>
-</ul>
-</div>
-<div data-role="collapsible">
-<h3>5F-4:クラウドソーシングを用いた高精度対訳作成のための低品質翻訳の活用</h3>
-<p>クラウドソーシングを用いた高精度対訳作成のための低品質翻訳の活用</p>
-<blockquote>現在，グローバル化による多言語間コミュニケーションの機会が増加している．しかし，多言語間での正確な情報共有は十分に行われていない．正確な多言語支援が求められる場では，多言語用例対訳が多く用いられている．用例対訳の作成には多言語の知識が必要となるが，多言語話者の人数は少なく，大きな負担がかかっている．そこで本稿では，複数の機械翻訳器と単言語話者を用いて多言語用例対訳候補の作成を行う，高精度対訳作成手法の提案を行う．また，同一文を作成したWorkerの数とコサイン類似度を用いた正確性の高い対訳文の抽出を行った．本稿の貢献は以下である．(1) 複数の機械翻訳器とクラウドソーシング上の単言語話者で多言語用例対訳の作成を行う高精度対訳作成手法を提案し，実現した．(2) 1つの機械翻訳器を使用する従来手法よりも複数の機械翻訳器を使用する提案手法の方が，正確な対訳候補文の作成割合が高くなることを示した．(3) 最多対訳候補よりもコサイン類似度を用いた対訳文の抽出の方が，正確な対訳文を多く抽出できることを示した．(4) 翻訳文の重複がある場合は，翻訳文の正確性は高いが対訳候補文の正確性は下がることを示した．</blockquote>
-<ul data-role='listview'>
-<li>発表者：福島 拓(静岡大)</li>
-<li>吉野 孝(和歌山大)</li>
-</ul>
-</div>
-<div data-role="collapsible">
-<h3>5F-5:クラウドソーシングを用いた応答用例対作成手法の提案</h3>
-<p>クラウドソーシングを用いた応答用例対作成手法の提案</p>
-<blockquote>現在，グローバル化によって多言語間コミュニケーションの機会が増加している．しかし，多言語間での正確な共有は困難であり，医療分野などの正確な情報の共有が求められる場合には十分な正確性の確保された用例対訳が使用されている．しかし，必要な用例対訳は多く，十分な数の用例対訳の収集は困難である．現在我々は，機械翻訳とクラウドソーシングを用いて誤った機械翻訳が行われた用例の訂正を依頼することで，単言語話者でも正確な用例対訳を作成が可能となる用例対訳作成手法の研究を行っている．しかし，作業者が機械翻訳文から翻訳前の用例の意図を推測しなければならず，正確な訂正文の取得が可能となる用例はほんの一部である．
-そこで本稿では，訂正を行う多言語テキストペアを作業者に提示する際に，作業者が翻訳前の用例の意図をより推測しやすくするために，評価対象の多言語テキストペアを会話文として提示し，応答用例対を作成する手法を提案する．本稿の貢献は，クラウドソーシングを用いて作成した質問と回答の対をクラウドソーシングと機械翻訳に利用することで，一部の多言語テキストペアにおいて，会話の支援に有用な応答用例対の作成が行える可能性を示した点である．</blockquote>
-<ul data-role='listview'>
-<li>発表者：山本 里美(和歌山大)</li>
-<li>福島 拓(静岡大)</li>
-<li>吉野 孝(和歌山大)</li>
-</ul>
-</div>

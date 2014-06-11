@@ -1,0 +1,30 @@
+---
+layout: event
+---
+{% if page.chair %}
+<ul data-role="listview"><li>
+{% if page.chairpid %}<a href="/people/{{page.chairpid}}">
+{% endif %}
+座長: {{page.chair}}
+{% if page.chairpid %}</a>{% endif %}
+</li></ul>
+{% endif %}
+{% for paper in page.paper %}
+<div data-role="collapsible">
+<h3>{{paper.psid}}: {{paper.title}}</h3>
+<p>{{paper.title}}</p>
+<blockquote>
+{% if paper.abstract %}{{paper.abstract}}
+{% else %}アブストラクト非公開
+{% endif %}
+</blockquote>
+<ul data-role="listview">
+{% for author in paper.author %}<li>
+{% if author.pid %}<a href="/people/{{author.pid}}">{% endif %}
+{% if author.presenter %}発表者:{% endif %}
+{{author.name}} ({{author.org}})
+{% if author.pid %}</a>{% endif %}
+</li>{% endfor %}
+</ul>
+</div>
+{% endfor %}

@@ -1,82 +1,96 @@
 ---
 category: session
-layout: event
+layout: session
 title: 1H プライバシーとセキュリティ要求
 pageid: 1h
 tags: normal
+roomid: h
 start: '2014-07-09 13:20:00'
 end: '2014-07-09 15:00:00'
 location: 宴
+chair: 藤川 真樹 (綜合警備保障)
+chairpid: '4010'
+paper:
+- title: DPCデータベースからのプライバシーを保護した線形回帰による入院日数モデルの学習
+  psid: 1H-1
+  paperid: '1053'
+  abstract: "患者の併存症やそれらに対する治療法とその結果に関する情報を統合することにより\r\n疾病に対する医療疫学や病院マネージメントなどに有益である．\r\nしかしながら，年齢や性別などの個人情報，\r\n喫煙やBMIなどのプライベート情報，そして治療行為に関する機微な情報を含むため，\r\n統合により個人が特定されてしまうリスクがある．\r\nこの課題に対して，加法準同型性を満たした公開鍵暗号を用いて個々のデータセットを暗号化し，復号することなく様々なデータマイニングのみを実行するプライバシー保護データマイニングが注目されている．\r\nしかし，暗号化に係わる大きなコストがかかるため，\r\n属性の種類やデータレコード数などの観点でスケーラビリティの成約があり，\r\nいわゆるビッグデータに適用するのは時期尚早と言われている．\r\nそこで，本研究では，最もシンプルな線形回帰分析のアルゴリズムを取り上げ，分散された状態で患者の年齢，性別，肺炎，脳血管障害，認知症関連病態，糖尿病などの併存症の状態から，対象患者の在院日数を予測するモデルをプライバシー保護して実施することを試みる．\r\nその計算過程において，適用範囲を支配するボトルネックが患者数と病院数のどこにあるのかを明らかにすること，および，その改善方法について提案することを研究の目的とする"
+  author:
+  - name: 菊池 浩明
+    org: 明大
+    presenter: true
+    pid: '4108'
+  - name: 橋本 英樹
+    org: 東大
+  - name: 康永 秀生
+    org: 東大
+- title: 差分プライバシー基準に基づく情報秘匿手法の一考察
+  psid: 1H-2
+  paperid: '1228'
+  author:
+  - name: 寺田 雅之
+    org: NTTドコモ
+    presenter: true
+    pid: '4194'
+  - name: 竹内 大二朗
+    org: 北海道科学大
+  - name: 齊藤 克哉
+    org: 北海道科学大
+  - name: 本郷 節之
+    org: 北海道科学大
+- title: 2つの匿名化情報の組み合わせによるk-匿名度の定式化に関する考察
+  psid: 1H-3
+  paperid: '1193'
+  abstract: "近年，ICカード等による公共交通機関の利用記録やクレジットカード等による購買記録，スマートフォン等による移動記録な\r\nどの様々なライフログデータや，小型気象センサ等による環境情報など複合したビッグデータを利用した社会的サービスに関心\r\nが高まっているが，その利活用のためにはパーソナル情報を安全に取り扱うことが不可欠である．プライバシ保護技術の一つと\r\nして，個人を特定・識別できないような形にパーソナル情報を加工する匿名化技術がある．しかし，匿名化した情報であっても\r\n，他の情報と突き合わせることで個人を識別できてしまう再識別可能性のリスクがあることが問題となっている．このリスクは\r\n，誰がどの情報を持っているかのコンテキストに依存するため，完全な安全性を保証する匿名化情報の作成は不可能となる．こ\r\nのため，現在は，パーソナル情報の利用は匿名化技術とともに，データの使用や保管に関するルールなどを契約として併せて利\r\n用している．しかし，契約は文言による表記であるため，その意味の解釈に個人差が生じるため曖昧性が生じ，契約の遵守を客\r\n観的に示す方法が難しい．このため本研究では，パーソナル情報の匿名性を客観的に表す指標を定式化することで，この問題の\r\n解決を試みる．"
+  author:
+  - name: 秋山 寛子
+    org: 慶大
+    presenter: true
+    pid: '4223'
+  - name: 中山 雅哉
+    org: 東大
+  - name: 加藤 朗
+    org: 慶大
+  - name: 砂原 秀樹
+    org: 慶大
+    pid: '4015'
+- title: Provenance-based Security Risk Assessment of Distributed Open Data
+  psid: 1H-4
+  paperid: '1171'
+  abstract: An open data, it would be a kind data that can be redistributed, reused
+    and can be used freely. With the rapid growth of linked data on the web more and
+    more application emerges that make use of this data. As a result, the discovery
+    of new knowledge by linking the big variety of data, sensing data and science
+    data has been increasing. Daily many users rely on data from the Web, but often
+    it is difficult or impossible to determine where it came from? How it was produced?
+    Who is the owner of the new information asset? Or the end users are allowed to
+    use or re-use the new information assets? In this paper, we propose a provenance-based
+    risk assessment of distributed open data. The provenance of information is used
+    to determine whether information is trusted, to identify a problem causing invalid
+    output, and to give credit to originators when reusing information. Providing
+    detailed information that says what the data is, where its come from, and everyone
+    and everything that’s happened to it since the creation. In addition, we have
+    a comprehensive approach to recording and agreeing data integrity, recording and
+    providing a complete record of how we have handled all data, tracking each and
+    every user access to data, and logging any attempts at unauthorized access.
+  author:
+  - name: Guillermo Horacio Ramirez Caceres
+    org: NICT
+    presenter: true
+  - name: Shinya Ohyanagi
+    org: NICT
+  - name: Koji Zettsu
+    org: NICT
+- title: Webアプリケーション更新時におけるセキュリティ要件獲得手法の検討
+  psid: 1H-5
+  paperid: '1273'
+  author:
+  - name: 野口 睦夫
+    org: 情報セキュリティ大
+    presenter: true
+    pid: '4286'
+  - name: 大久保 隆夫
+    org: 情報セキュリティ大
+  - name: 田中 英彦
+    org: 情報セキュリティ大
 ---
-座長: 藤川 真樹 (綜合警備保障)
-<div data-role="collapsible">
-<h3>1H-1:DPCデータベースからのプライバシーを保護した線形回帰による入院日数モデルの学習</h3>
-<p>DPCデータベースからのプライバシーを保護した線形回帰による入院日数モデルの学習</p>
-<blockquote>患者の併存症やそれらに対する治療法とその結果に関する情報を統合することにより
-疾病に対する医療疫学や病院マネージメントなどに有益である．
-しかしながら，年齢や性別などの個人情報，
-喫煙やBMIなどのプライベート情報，そして治療行為に関する機微な情報を含むため，
-統合により個人が特定されてしまうリスクがある．
-この課題に対して，加法準同型性を満たした公開鍵暗号を用いて個々のデータセットを暗号化し，復号することなく様々なデータマイニングのみを実行するプライバシー保護データマイニングが注目されている．
-しかし，暗号化に係わる大きなコストがかかるため，
-属性の種類やデータレコード数などの観点でスケーラビリティの成約があり，
-いわゆるビッグデータに適用するのは時期尚早と言われている．
-そこで，本研究では，最もシンプルな線形回帰分析のアルゴリズムを取り上げ，分散された状態で患者の年齢，性別，肺炎，脳血管障害，認知症関連病態，糖尿病などの併存症の状態から，対象患者の在院日数を予測するモデルをプライバシー保護して実施することを試みる．
-その計算過程において，適用範囲を支配するボトルネックが患者数と病院数のどこにあるのかを明らかにすること，および，その改善方法について提案することを研究の目的とする</blockquote>
-<ul data-role='listview'>
-<li>発表者：菊池 浩明(明大)</li>
-<li>橋本 英樹(東大)</li>
-<li>康永 秀生(東大)</li>
-</ul>
-</div>
-<div data-role="collapsible">
-<h3>1H-2:差分プライバシー基準に基づく情報秘匿手法の一考察</h3>
-<p>差分プライバシー基準に基づく情報秘匿手法の一考察</p>
-<blockquote>アブストラクト非公開</blockquote>
-<ul data-role='listview'>
-<li>発表者：寺田 雅之(NTTドコモ)</li>
-<li>竹内 大二朗(北海道科学大)</li>
-<li>齊藤 克哉(北海道科学大)</li>
-<li>本郷 節之(北海道科学大)</li>
-</ul>
-</div>
-<div data-role="collapsible">
-<h3>1H-3:2つの匿名化情報の組み合わせによるk-匿名度の定式化に関する考察</h3>
-<p>2つの匿名化情報の組み合わせによるk-匿名度の定式化に関する考察</p>
-<blockquote>近年，ICカード等による公共交通機関の利用記録やクレジットカード等による購買記録，スマートフォン等による移動記録な
-どの様々なライフログデータや，小型気象センサ等による環境情報など複合したビッグデータを利用した社会的サービスに関心
-が高まっているが，その利活用のためにはパーソナル情報を安全に取り扱うことが不可欠である．プライバシ保護技術の一つと
-して，個人を特定・識別できないような形にパーソナル情報を加工する匿名化技術がある．しかし，匿名化した情報であっても
-，他の情報と突き合わせることで個人を識別できてしまう再識別可能性のリスクがあることが問題となっている．このリスクは
-，誰がどの情報を持っているかのコンテキストに依存するため，完全な安全性を保証する匿名化情報の作成は不可能となる．こ
-のため，現在は，パーソナル情報の利用は匿名化技術とともに，データの使用や保管に関するルールなどを契約として併せて利
-用している．しかし，契約は文言による表記であるため，その意味の解釈に個人差が生じるため曖昧性が生じ，契約の遵守を客
-観的に示す方法が難しい．このため本研究では，パーソナル情報の匿名性を客観的に表す指標を定式化することで，この問題の
-解決を試みる．</blockquote>
-<ul data-role='listview'>
-<li>発表者：秋山 寛子(慶大)</li>
-<li>中山 雅哉(東大)</li>
-<li>加藤 朗(慶大)</li>
-<li>砂原 秀樹(慶大)</li>
-</ul>
-</div>
-<div data-role="collapsible">
-<h3>1H-4:Provenance-based Security Risk Assessment of Distributed Open Data</h3>
-<p>Provenance-based Security Risk Assessment of Distributed Open Data</p>
-<blockquote>An open data, it would be a kind data that can be redistributed, reused and can be used freely. With the rapid growth of linked data on the web more and more application emerges that make use of this data. As a result, the discovery of new knowledge by linking the big variety of data, sensing data and science data has been increasing. Daily many users rely on data from the Web, but often it is difficult or impossible to determine where it came from? How it was produced? Who is the owner of the new information asset? Or the end users are allowed to use or re-use the new information assets? In this paper, we propose a provenance-based risk assessment of distributed open data. The provenance of information is used to determine whether information is trusted, to identify a problem causing invalid output, and to give credit to originators when reusing information. Providing detailed information that says what the data is, where its come from, and everyone and everything that’s happened to it since the creation. In addition, we have a comprehensive approach to recording and agreeing data integrity, recording and providing a complete record of how we have handled all data, tracking each and every user access to data, and logging any attempts at unauthorized access.</blockquote>
-<ul data-role='listview'>
-<li>発表者：Guillermo Horacio Ramirez Caceres(NICT)</li>
-<li>Shinya Ohyanagi(NICT)</li>
-<li>Koji Zettsu(NICT)</li>
-</ul>
-</div>
-<div data-role="collapsible">
-<h3>1H-5:Webアプリケーション更新時におけるセキュリティ要件獲得手法の検討</h3>
-<p>Webアプリケーション更新時におけるセキュリティ要件獲得手法の検討</p>
-<blockquote>アブストラクト非公開</blockquote>
-<ul data-role='listview'>
-<li>発表者：野口 睦夫(情報セキュリティ大)</li>
-<li>大久保 隆夫(情報セキュリティ大)</li>
-<li>田中 英彦(情報セキュリティ大)</li>
-</ul>
-</div>
