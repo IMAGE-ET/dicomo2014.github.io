@@ -13,6 +13,7 @@ layout: default
     <div class="contact">
       &copy; <a href="mailto:{{ site.author.email }}" data-icon="mail">
       {{ site.author.name }}</a>
+    <span class="appcachestatus"></span>
     </div>
   </div> <!-- footer -->
   <div data-role="panel" data-position="right" data-display="overlay" id="option">
@@ -34,5 +35,19 @@ layout: default
     $("#qrcodeimg-{{page.pageid}}").qrcode($.mobile.path.getLocation());
     $("#popupqrcode-{{page.pageid}}").popup("open");
   });
+  if (! $.mobile.appcachestatus) {
+  $.mobile.appcachestatus = function() {
+    if (window.applicationCache.status == window.applicationCache.IDLE) {
+      $(".appcachestatus").html("Cached");
+    } else if (window.applicationCache.status == window.applicationCache.DOWNLOADING) {
+      $(".appcachestatus").html("Downloading");
+    }
+  }
+  }
+  if (window.applicationCache) {
+    window.applicationCache.addEventListener("downloading", $.mobile.appcachestatus, false);
+    window.applicationCache.addEventListener("cached", $.mobile.appcachestatus, false);
+    window.applicationCache.addEventListener("noupdate", $.mobile.appcachestatus, false);
+  }
 </script>
 </div> <!-- page -->
