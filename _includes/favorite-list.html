@@ -9,7 +9,7 @@ $.mobile.favupdate{{include.pageid}} = function(e, ui) {
     $(".favstar").html("");
     var favj = JSON.parse(window.localStorage.getItem("{{include.storage}}"));
     for (var i in favj) {
-      $("#star-" + i).html("{{site.favorite.star}}");
+      $("[id=star-" + i + "]").html("{{site.favorite.star}}");
     }
   }
 }

@@ -17,13 +17,14 @@ layout: page
 <p>  {{ content }} </p>
 {% if page.session %}
 <h3>関連セッション</h3>
+{% for session in page.session %}
 <div data-role="collapsible">
-{% for s in page.session %}
-<h3>{{ s.sessiontitle }} : {{ s.role }}</h3>
-{% if s.papertitle %}
-<p>論文タイトル：{{ s.papertitle }}</p>
+{% if session.psid %}
+<h3>{{session.role}} : {{ session.psid }} : {{ session.title }}</h3>
+{% else %}
+<h3>{{session.role}} : {{ session.sessiontitle }}</h3>
 {% endif %}
-<a data-role="button" data-icon="arrow-r" data-iconpos="right" href="{{ s.url }}">{{s.sessiontitle}}: セッション詳細</a>
-{% endfor %}
+<a data-role="button" data-icon="arrow-r" data-iconpos="right" href="/session/session-{{ session.sessionid }}">{{session.sessiontitle}}: 詳細</a>
 </div>
+{% endfor %}
 {% endif %}

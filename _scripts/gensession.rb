@@ -14,10 +14,9 @@ session_folder = "_posts/generated"
 
 papercache = PaperCache.new
 sessioncache = SessionCache.new
-personcache = PersonCache.new(papercache)
+personcache = PersonCache.new(papercache, sessioncache)
 
-while sessioncache.hasNext?
-  session = sessioncache.next
+sessioncache.list.each do |session|
 
   # セッション情報
   session_file_name = sprintf "%d-%02d-%02d-session-%s.html", session[:year], session[:month], session[:day], session[:id]

@@ -4,6 +4,7 @@ layout: event
 {% if page.chair %}
 <ul data-role="listview"><li>
 {% if page.chairpid %}<a href="/people/{{page.chairpid}}">
+<span class="favstar" id="star-{{page.chairpid}}"></span>
 {% endif %}
 座長: {{page.chair}}
 {% if page.chairpid %}</a>{% endif %}
@@ -11,7 +12,10 @@ layout: event
 {% endif %}
 {% for paper in page.paper %}
 <div data-role="collapsible">
-<h3>{{paper.psid}}: {{paper.title}}</h3>
+<h3>{% for author in paper.author %}
+{% if author.pid %}<span class="favstar" id="star-{{author.pid}}"></span>
+{% endif %}{% endfor %}
+{{paper.psid}}: {{paper.title}}</h3>
 <p>{{paper.title}}</p>
 <blockquote>
 {% if paper.abstract %}{{paper.abstract}}
@@ -20,7 +24,9 @@ layout: event
 </blockquote>
 <ul data-role="listview">
 {% for author in paper.author %}<li>
-{% if author.pid %}<a href="/people/{{author.pid}}">{% endif %}
+{% if author.pid %}<a href="/people/{{author.pid}}">
+<span class="favstar" id="star-{{author.pid}}"></span>
+{% endif %}
 {% if author.presenter %}発表者:{% endif %}
 {{author.name}} ({{author.org}})
 {% if author.pid %}</a>{% endif %}
@@ -28,3 +34,5 @@ layout: event
 </ul>
 </div>
 {% endfor %}
+
+{% include favorite-list.html storage="favpeople" pageid=page.pageid %}

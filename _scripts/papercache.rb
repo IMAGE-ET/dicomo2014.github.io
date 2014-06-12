@@ -7,12 +7,12 @@ $paper_data_file = "_data/DICOMO2014_paper_data.csv"
 
 class PaperCache
 
-  attr_reader :list, :author, :authorid, :number
+  attr_reader :list, :author, :presenterid, :number
 
   def initialize()
     @list = []
     @author = {}
-    @authorid = {}
+    @presenterid = {}
     @number = {}
     @index = -1
     reader = CSV.open($paper_data_file, "rt", {:encoding=>"cp932:utf-8", :skip_blanks=>false})
@@ -23,28 +23,20 @@ class PaperCache
     @header = reader.shift
     reader.each do |row|
       item = PaperItem.new(row)
+      if item.reject? then
+        next
+      end
       @list << item
 #      puts "paper id: " + item.id
       # 登録番号
       @number[item.id] = item
       # 講演者参加登録番号
-      @authorid[item.authorid] = item
+      @presenterid[item.presenterid] = item
       item.authors.each do |author|
-        @author[author[:name]] = item
+        @author[author[:name]] = [] unless @author[author[:name]]
+        @author[author[:name]] << item
       end
     end
-  end
-
-  def size
-    @list.size
-  end
-
-  def hasNext?
-    @list.size - 1 > @index
-  end
-
-  def next
-    @list[++@index]
   end
 
   class PaperItem
@@ -56,7 +48,12 @@ class PaperCache
       @row[0]
     end
 
-    def authorid
+    def title
+      @row[1]
+    end
+
+    # 発表者
+    def presenterid
       @row[28]
     end
 
@@ -66,8 +63,24 @@ class PaperCache
 #      not /不許可$/ =~ row[14]
     end
 
+    def reject?
+      /^reject/ =~ @row[44]
+    end
+
     def abstract
       @row[13]
+    end
+
+    def sessionid
+      @row[46].downcase if @row[46]
+    end
+
+    def psid
+      @row[49].strip if @row[49]
+    end
+
+    def sessiontitle
+      @row[47]
     end
 
     def authors
@@ -79,6 +92,10 @@ class PaperCache
         index += 6
       end
       authorlist
+    end
+
+    def isPresenter?(person)
+      self.presenterid == person.id
     end
   end
 end

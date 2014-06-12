@@ -7,14 +7,16 @@ $session_data_file = "_data/DICOMO2014_session_data.csv"
 
 class SessionCache
 
-  attr_reader :list, :author, :number
+  attr_reader :list, :author, :number, :chair
 
   def initialize()
     @index = -1
     @list = []
     @author = {}
     @number = {}
-    reader = CSV.open($session_data_file, "rt", {:encoding=>"cp932:utf-8", :skip_blanks=>false})
+    @chair = {}
+    reader = CSV.open($session_data_file, "rt",
+                      {:encoding=>"cp932:utf-8", :skip_blanks=>false})
     puts "reading session file: " + $session_data_file
     detail = false
     year = 0
@@ -83,6 +85,7 @@ class SessionCache
         if row.length > 0 and /^座長:\s(?<chairname>.+)\s\((?<chairorg>.+)\)/ =~ row[0] then
           item[:chairname] = chairname
           item[:chairorg] = chairorg
+          @chair[chairname] = item
           row = reader.shift # empty
         end
         paperlist = []
@@ -118,13 +121,4 @@ class SessionCache
       end #session
     end #until
   end #initialize
-
-  def hasNext?
-    @index < @list.size - 1
-  end
-
-  def next
-    @index += 1 if @index < @list.size - 1
-    @list[@index]
-  end
 end
