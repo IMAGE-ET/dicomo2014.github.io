@@ -7,7 +7,7 @@ $session_data_file = "_data/DICOMO2014_session_data.csv"
 
 class SessionCache
 
-  attr_reader :list, :author, :number, :chair
+  attr_reader :list
 
   def initialize()
     @index = -1
@@ -121,4 +121,16 @@ class SessionCache
       end #session
     end #until
   end #initialize
+
+  def byauthor(name)
+    @author[name.downcase]
+  end
+
+  def bychair(name)
+    @chair[name.downcase]
+  end
+
+  def bynumber(num)
+    @number[num]
+  end
 end

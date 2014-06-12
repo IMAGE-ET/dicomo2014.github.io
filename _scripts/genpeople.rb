@@ -36,8 +36,8 @@ personcache.list.each do |person|
   front["pageid"] = person.id
   front["emailhash"] = person.emailhash
   sessionlist = []
-  if papercache.author[person.name] then
-    papercache.author[person.name].each do |paper|
+  if papercache.byauthor(person.name) then
+    papercache.byauthor(person.name).each do |paper|
       pitem = {"title"=>paper.title, "psid"=>paper.psid,
         "sessiontitle"=>paper.sessiontitle, "sessionid"=>paper.sessionid}
       if paper.isPresenter?(person) then
@@ -48,8 +48,8 @@ personcache.list.each do |person|
       sessionlist << pitem
     end
   end
-  if sessioncache.chair[person.name] then
-    session = sessioncache.chair[person.name]
+  if sessioncache.bychair(person.name) then
+    session = sessioncache.bychair(person.name)
     sitem = {"sessiontitle"=>session[:title], "role"=>"座長",
       "sessionid"=>session[:id]}
     sessionlist << sitem

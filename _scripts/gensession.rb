@@ -41,8 +41,8 @@ sessioncache.list.each do |session|
   # 座長
   if session[:chairname] then
     front["chair"] = session[:chairname] + " (" + session[:chairorg] + ")";
-    if personcache.name[session[:chairname]] then
-      person = personcache.name[session[:chairname]]
+    if personcache.byname(session[:chairname]) then
+      person = personcache.byname(session[:chairname])
       front["chairpid"] = person.id
     end
   end
@@ -52,8 +52,8 @@ sessioncache.list.each do |session|
     fpaper = {"title" => paper[:title], "psid" => paper[:psid],
       "paperid" => paper[:id]}
     pid = paper[:id]
-    if papercache.number[pid] then
-      paperitem = papercache.number[pid]
+    if papercache.bynumber(pid) then
+      paperitem = papercache.bynumber(pid)
       puts "not found " + pid unless paperitem
       if paperitem.right? then
         fpaper["abstract"] = paperitem.abstract
@@ -63,7 +63,7 @@ sessioncache.list.each do |session|
     paper[:author].each do |author|
       aitem = {"name" => author[:name], "org" => author[:org]}
       aitem["presenter"] = true if author[:presenter]
-      person = personcache.name[author[:name]]
+      person = personcache.byname(author[:name])
       if person then
         aitem["pid"] = person.id
       end

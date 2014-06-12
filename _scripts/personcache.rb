@@ -8,7 +8,7 @@ $person_data_file = "_data/DICOMO2014参加者-20140612.csv"
 
 class PersonCache
 
-  attr_reader :list, :name, :number
+  attr_reader :list
 
   def initialize(papercache, sessioncache)
     @papercache = papercache
@@ -30,9 +30,17 @@ class PersonCache
 #      puts item.name
       @number[item.id] = item
       if item.public? then
-        @name[item.name] = item
+        @name[item.name.downcase] = item
       end
     end
+  end
+
+  def byname(name)
+    @name[name.downcase]
+  end
+
+  def bynumber(num)
+    @number[num]
   end
 
   class PersonItem
@@ -55,7 +63,11 @@ class PersonCache
     end
 
     def name
-      @row[1] + " " + @row[2]
+      if /^[\w\s]+$/ =~ @row[1] then
+        @row[2] + " " + @row[1]
+      else
+        @row[1] + " " + @row[2]
+      end
     end
 
     def comment
@@ -63,7 +75,7 @@ class PersonCache
     end
 
     def public?
-      self.comment or @papercache.author[self.name] or @sessioncache.chair[self.name]
+      self.comment or @papercache.byauthor(self.name) or @sessioncache.bychair(self.name)
     end
   end
 end

@@ -7,7 +7,7 @@ $paper_data_file = "_data/DICOMO2014_paper_data.csv"
 
 class PaperCache
 
-  attr_reader :list, :author, :presenterid, :number
+  attr_reader :list
 
   def initialize()
     @list = []
@@ -37,6 +37,18 @@ class PaperCache
         @author[author[:name]] << item
       end
     end
+  end
+
+  def byauthor(name)
+    @author[name.downcase]
+  end
+
+  def bypresenterid(id)
+    @presenterid[id]
+  end
+
+  def bynumber(num)
+    @number[num]
   end
 
   class PaperItem
