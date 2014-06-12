@@ -85,7 +85,7 @@ class SessionCache
         if row.length > 0 and /^座長:\s(?<chairname>.+)\s\((?<chairorg>.+)\)/ =~ row[0] then
           item[:chairname] = chairname
           item[:chairorg] = chairorg
-          @chair[chairname] = item
+          @chair[chairname.downcase] = item
           row = reader.shift # empty
         end
         paperlist = []
@@ -108,8 +108,8 @@ class SessionCache
             else
               author[:presenter] = false
             end
-            @author[author[:name]] = [] unless @author[author[:name]]
-            @author[author[:name]] << paper
+            @author[author[:name].downcase] = [] unless @author[author[:name].downcase]
+            @author[author[:name].downcase] << paper
             authorlist << author
           end #author
           paper[:author] = authorlist

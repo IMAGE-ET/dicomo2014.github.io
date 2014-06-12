@@ -33,8 +33,8 @@ class PaperCache
       # 講演者参加登録番号
       @presenterid[item.presenterid] = item
       item.authors.each do |author|
-        @author[author[:name]] = [] unless @author[author[:name]]
-        @author[author[:name]] << item
+        @author[author[:name].downcase] = [] unless @author[author[:name].downcase]
+        @author[author[:name].downcase] << item
       end
     end
   end
@@ -99,7 +99,12 @@ class PaperCache
       authorlist = []
       index = 68
       while @row[index] do
-        author = {:name => @row[index] + " " + @row[index + 1]}
+        if /^[\w\s]+$/ =~ @row[index] then
+          name = @row[index + 1] + " " + @row[index]
+        else
+          name = @row[index] + " " + @row[index + 1]
+        end
+        author = {:name => name}
         authorlist << author
         index += 6
       end
