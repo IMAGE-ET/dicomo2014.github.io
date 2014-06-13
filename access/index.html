@@ -4,6 +4,7 @@ title: Access
 id: access
 ---
 <ul data-role="listview">
+<li data-role="list-divider">会場まで</li>
 {% for access in site.data.access %}
 <li>
 {% if access.type == 'map' %}
@@ -14,6 +15,11 @@ id: access
 <a href="{{ access.url }}">{{ access.title }}</a>
 {% endif %}
 </li>
+{% endfor %}
+<li data-role="list-divider">会場内</li>
+{% assign rooms=site.tags.room | sort "pageid" %}
+{% for room in rooms %}
+<li><a href="{{room.url}}">{{room.title}}</a></li>
 {% endfor %}
 </ul>
 <script>

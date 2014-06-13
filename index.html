@@ -12,6 +12,41 @@ title: Home
 <h2>関連リンク</h2>
 <ul data-role="listview">
 {% for link in site.data.links %}
-  <li><a href="{{ link.url }}" rel="external" data-role="button"{% if link.icon %} data-icon="{{ link.icon }}" data-iconpos="left"{% endif %}">{{ link.title }}</a></li>
+  <li><a href="{{ link.url }}" rel="external" data-role="button"{% if link.icon %} data-icon="{{ link.icon }}" data-iconpos="left"{% endif %}>{{ link.title }}</a></li>
 {% endfor %}
 </ul>
+<p>キャッシュ状態：<span id="appcachestatus"></span></p>
+<script>
+  if (! $.mobile.appcachestatus) {
+  $.mobile.appcachestatus = function() {
+    switch (window.applicationCache.status) {
+      case window.applicationCache.UNCACHED:
+        $("#appcachestatus").html("未キャッシュ");
+        break;
+      case window.applicationCache.IDLE:
+        $("#appcachestatus").html("キャッシュ済み");
+        break;
+      case window.applicationCache.CHECKING:
+        $("#appcachestatus").html("確認中");
+        break;
+      case window.applicationCache.DOWNLOADING:
+        $("#appcachestatus").html("ダウンロード中");
+        break;
+      case window.applicationCache.UPDATEREADY:
+        $("#appcachestatus").html("画面を更新してください");
+        break;
+      case window.applicationCache.OBSOLETE:
+        $("#appcachestatus").html("キャッシュ削除");
+        break;
+    }
+  }
+  }
+  if (window.applicationCache) {
+    $.mobile.appcachestatus();
+    window.applicationCache.addEventListener("downloading", $.mobile.appcachestatus, false);
+    window.applicationCache.addEventListener("checking", $.mobile.appcachestatus, false);
+    window.applicationCache.addEventListener("cached", $.mobile.appcachestatus, false);
+    window.applicationCache.addEventListener("noupdate", $.mobile.appcachestatus, false);
+    window.applicationCache.addEventListener("updateready", $.mobile.appcachestatus, false);
+  }
+</script>

@@ -1,0 +1,32 @@
+---
+layout: page
+---
+<link rel="stylesheet" href="/css/jquery.touchpanview.css">
+<script src="/js/jquery.touchpanview.js"></script>
+
+<h3>部屋：{{page.title}}</h3>
+
+{{content}}
+
+<div data-role="navbar" id="zoombar">
+<ul>
+<li><a href="#" id="zoomin">拡大</a></li>
+<li><a href="#" id="zoomout">縮小</a></li>
+</ul>
+</div>
+
+<img src="{{site.roommap.imageurl}}" id="panview-{{page.pageid}}" width="{{site.roommap.width}}" height="{{site.roommap.height}}"/>
+
+<script type="text/javascript">
+$("#{{page.pageid}}").on("pagecreate", function() {
+  var pagewidth = $("#{{page.pageid}}").width();
+  $("#panview-{{page.pageid}}").touchPanView({width: pagewidth, height: 400,
+    pins: [{x: {{page.x}}*100/{{site.roommap.width}}, y: {{page.y}}*100/{{site.roommap.height}}, point: 'center', title: "{{page.title}}"}],
+    pinDefaults: {},
+    startZoomedOut: true,
+    easing: false,
+    zoomFull: "#zoomin",
+    zoomFit: "#zoomout"
+  });
+});
+</script>
