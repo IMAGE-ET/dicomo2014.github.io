@@ -5,7 +5,7 @@ layout: page
 <a href="http://gravatar.com/{{page.emailhash}}"><img src="http://www.gravatar.com/avatar/{{ page.emailhash }}?s=40&d=retro" /></a>
 {% endif %}
 <font size="large">{{ page.title }}</font>
-<small>ID: {{ page.pageid }}</small>
+<small>{{ page.yomi }} ID: {{ page.pageid }}</small>
 {% include favorite-button.html storage='favpeople' pageid=page.pageid %}
 
 {% if page.org %}

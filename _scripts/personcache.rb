@@ -71,6 +71,10 @@ class PersonCache
       end
     end
 
+    def yomi
+      @row[3] + " " + @row[4]
+    end
+
     def alias
       @row[85]
     end

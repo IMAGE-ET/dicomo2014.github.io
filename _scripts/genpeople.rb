@@ -33,6 +33,7 @@ personcache.list.each do |person|
 
   front = {"category" => "people", "layout" => "people"}
   front["title"] = person.name
+  front["yomi"] = person.yomi
   front["pageid"] = person.id
   front["emailhash"] = person.emailhash
   sessionlist = []
