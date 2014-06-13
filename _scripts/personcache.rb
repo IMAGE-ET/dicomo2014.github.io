@@ -4,7 +4,7 @@
 require 'csv'
 require 'digest/md5'
 
-$person_data_file = "_data/DICOMO2014参加者-20140612.csv"
+$person_data_file = "_data/DICOMO2014参加者-20140613.csv"
 
 class PersonCache
 
@@ -31,6 +31,7 @@ class PersonCache
       @number[item.id] = item
       if item.public? then
         @name[item.name.downcase] = item
+        @name[item.alias.downcase] = item if item.alias
       end
     end
   end
@@ -70,12 +71,22 @@ class PersonCache
       end
     end
 
+    def alias
+      @row[85]
+    end
+
     def comment
       @row[81]
     end
 
     def public?
-      self.comment or @papercache.byauthor(self.name) or @sessioncache.bychair(self.name)
+      if self.comment or @papercache.byauthor(self.name) or @sessioncache.bychair(self.name) then
+        true
+      elsif self.alias and (@papercache.byauthor(self.alias) or @sessioncache.bychair(self.alias)) then
+        true
+      else
+        false
+      end
     end
   end
 end
