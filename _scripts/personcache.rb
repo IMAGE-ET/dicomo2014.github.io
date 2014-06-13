@@ -28,7 +28,10 @@ class PersonCache
       @list << item
 #      puts "person id: " + item.id
 #      puts item.name
+      puts "number duplication " + item.id if @number[item.id]
       @number[item.id] = item
+      puts "name duplication " + item.name if @name[item.name.downcase]
+      puts "alias duplication " + item.alias if item.alias and @name[item.alias.downcase]
       if item.public? then
         @name[item.name.downcase] = item
         @name[item.alias.downcase] = item if item.alias
