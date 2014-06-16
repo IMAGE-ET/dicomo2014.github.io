@@ -21,6 +21,7 @@ layout: page
 <div data-role="collapsible">
 {% if session.psid %}
 <h3>{{session.role}} : {{ session.psid }} : {{ session.title }}</h3>
+<p>{{ session.psid }} : {{ session.title }}</p>
 {% else %}
 <h3>{{session.role}} : {{ session.sessiontitle }}</h3>
 {% endif %}

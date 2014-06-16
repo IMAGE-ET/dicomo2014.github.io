@@ -64,9 +64,17 @@ class PaperCache
       @row[1]
     end
 
-    # 発表者
+    # 発表者。更新されていない場合あり
     def presenterid
       @row[28]
+    end
+
+    def presentername
+      @row[25]
+    end
+
+    def presenternum
+      @row[24]
     end
 
     # 論文集発行日以降に変更
@@ -92,12 +100,14 @@ class PaperCache
     end
 
     def sessiontitle
-      @row[47]
+      title = @row[47]
+      title = @row[46] + " " + title if @row[46]
     end
 
     def authors
       authorlist = []
       index = 68
+      num = 1
       while @row[index] do
         if /^[\w\s]+$/ =~ @row[index] then
           name = @row[index + 1] + " " + @row[index]
@@ -105,14 +115,17 @@ class PaperCache
           name = @row[index] + " " + @row[index + 1]
         end
         author = {:name => name}
+        author[:presenter] = (self.presenternum == num)
         authorlist << author
         index += 6
+        num += 1
       end
       authorlist
     end
 
     def isPresenter?(person)
-      self.presenterid == person.id
+#      self.presenterid == person.id
+      self.presentername == person.name or self.presentername == person.alias
     end
   end
 end
