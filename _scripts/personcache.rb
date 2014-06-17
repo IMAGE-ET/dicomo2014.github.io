@@ -4,7 +4,7 @@
 require 'csv'
 require 'digest/md5'
 
-$person_data_file = "_data/DICOMO2014参加者-20140613.csv"
+$person_data_file = "_data/DICOMO2014参加者-20140617.csv"
 
 class PersonCache
 
