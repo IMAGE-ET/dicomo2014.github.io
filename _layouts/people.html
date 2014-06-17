@@ -25,7 +25,7 @@ layout: page
 {% else %}
 <h3>{{session.role}} : {{ session.sessiontitle }}</h3>
 {% endif %}
-<a data-role="button" data-icon="arrow-r" data-iconpos="right" href="/session/session-{{ session.sessionid }}">{{session.sessiontitle}}: 詳細</a>
+<a data-role="button" data-icon="arrow-r" data-iconpos="right" href="/session/session-{{ session.sessionid }}/">{{session.sessiontitle}}: 詳細</a>
 </div>
 {% endfor %}
 {% endif %}

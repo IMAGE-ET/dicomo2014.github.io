@@ -3,7 +3,7 @@ layout: event
 ---
 {% if page.chair %}
 <ul data-role="listview"><li>
-{% if page.chairpid %}<a href="/people/{{page.chairpid}}">
+{% if page.chairpid %}<a href="/people/{{page.chairpid}}/">
 <span class="favstar" id="star-{{page.chairpid}}"></span>
 {% endif %}
 座長: {{page.chair}}
@@ -24,7 +24,7 @@ layout: event
 </blockquote>
 <ul data-role="listview">
 {% for author in paper.author %}<li>
-{% if author.pid %}<a href="/people/{{author.pid}}">
+{% if author.pid %}<a href="/people/{{author.pid}}/">
 <span class="favstar" id="star-{{author.pid}}"></span>
 {% endif %}
 {% if author.presenter %}発表者:{% endif %}

@@ -6,7 +6,7 @@ layout: page
 <li>日時: {{ page.start | date: "%m/%d" }} {{ page.start | date: "%H時%M分" }}-{{ page.end | date: "%H時%M分" }}</li>
 {% if page.location %}
 <li>
-{% if page.roomid %}<a href="/access/room-{{page.roomid}}">{% endif %}
+{% if page.roomid %}<a href="/access/room-{{page.roomid}}/">{% endif %}
 場所: {{ page.location }}
 {% if page.roomid %}</a>{% endif %}
 </li>
