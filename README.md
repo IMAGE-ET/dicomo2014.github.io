@@ -18,6 +18,7 @@ DICOMOシンポジウム用に作成していますが、
 * [jQuery 2.1.1](http://jquery.com/)
 * [jQuery Mobile 1.4.2](http://jquerymobile.com/)
 * [FullCalendar Plugin 1.6.4](http://arshaw.com/fullcalendar/)
+* [jQuery QR Code 1.0](http://jeromeetienne.github.io/jquery-qrcode/)
 * [TouchPanView Plugin](http://www.consulenza-web.com/jquery/touchpanview/)
 * [jQuery-Mobile-Events](https://github.com/benmajor/jQuery-Mobile-Events)
 
