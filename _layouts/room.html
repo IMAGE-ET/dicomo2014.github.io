@@ -1,17 +1,14 @@
 ---
 layout: page
 ---
-<link rel="stylesheet" href="/css/jquery.touchpanview.css">
-<script src="/js/jquery.touchpanview.js"></script>
-
 <h3>部屋：{{page.title}}</h3>
 
 {{content}}
 
 <div data-role="navbar" id="zoombar">
 <ul>
-<li><a href="#" id="zoomin">拡大</a></li>
-<li><a href="#" id="zoomout">縮小</a></li>
+<li><a href="#" id="zoomin-{{page.pageid}}">拡大</a></li>
+<li><a href="#" id="zoomout-{{page.pageid}}">縮小</a></li>
 </ul>
 </div>
 
@@ -25,8 +22,8 @@ $("#{{page.pageid}}").on("pagecreate", function() {
     pinDefaults: {},
     startZoomedOut: true,
     easing: false,
-    zoomFull: "#zoomin",
-    zoomFit: "#zoomout"
+    zoomFull: "#zoomin-{{page.pageid}}",
+    zoomFit: "#zoomout-{{page.pageid}}"
   });
 });
 </script>
