@@ -4,7 +4,7 @@
 require 'csv'
 require 'digest/md5'
 
-$person_data_file = "_data/DICOMO2014参加者-20140617.csv"
+$person_data_file = "_data/DICOMO2014参加者-20140619.csv"
 
 class PersonCache
 
@@ -32,10 +32,10 @@ class PersonCache
       @number[item.id] = item
       puts "name duplication " + item.name if @name[item.name.downcase]
       puts "alias duplication " + item.alias if item.alias and @name[item.alias.downcase]
-      if item.public? then
+#      if item.public? then
         @name[item.name.downcase] = item
         @name[item.alias.downcase] = item if item.alias
-      end
+#      end
     end
   end
 
