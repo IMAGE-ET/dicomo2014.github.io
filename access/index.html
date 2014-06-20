@@ -4,17 +4,23 @@ title: Access
 id: access
 ---
 <ul data-role="listview">
-<li data-role="list-divider">会場まで</li>
 {% for access in site.data.access %}
-<li>
 {% if access.type == 'map' %}
-<a href="http://maps.google.com/maps?q={{ access.query }}" class="maplink" data-role="button" data-icon="location" data-iconpos="left">{{ access.title }}</a>
+<li>
+<a href="http://maps.google.com/maps?q={{ access.query }}" class="maplink" data-role="button" data-icon="location" data-iconpos="left">{{ access.title }}
+{% if access.memo %}<span class="ui-li-count">{{access.memo}}</span>{% endif %}
+</a></li>
 {% elsif access.type == 'direction' %}
+<li>
 <a href="http://maps.google.com/maps?daddr={{ access.dest }}" class="maplink" data-role="button" data-icon="navigation" data-iconpos="left">{{ access.title }}</a>
-{% elsif access.type == 'url' %}
-<a href="{{ access.url }}">{{ access.title }}</a>
-{% endif %}
 </li>
+{% elsif access.type == 'url' %}
+<li>
+<a href="{{ access.url }}">{{ access.title }}</a>
+</li>
+{% elsif access.type == 'divider' %}
+<li data-role="list-divider">{{access.title}}</li>
+{% endif %}
 {% endfor %}
 <li data-role="list-divider">会場内</li>
 {% assign rooms=site.tags.room | sort "pageid" %}
@@ -23,7 +29,7 @@ id: access
 {% endfor %}
 </ul>
 <script>
-$(document).on('pageshow', "#access", function() {
+$("#access").on('pagecreate', function() {
   if ((navigator.userAgent.indexOf('iPhone')) > 0) {
     $(".maplink a").each(function() {
       var u = $(this).attr('href').replace(/google/g, 'apple');

@@ -1,11 +1,30 @@
+- type: divider
+  title: ホテル泉慶
 - type: map
   title: 月岡温泉 泉慶の地図
   query: 新潟県新発田市月岡温泉４５３ 泉慶
-
 - type: direction
   title: 月岡温泉 泉慶への道順
   dest: 新潟県新発田市月岡温泉４５３ 泉慶
-
 - type: url
   title: 月岡温泉 泉慶HP
   url: http://www.senkei.com/
+
+- type: divider
+  title: アウトドアセッション
+- type: map
+  title: 月岡カリオンパーク
+  query: 新潟県新発田市月岡温泉８２７ 月岡カリオンパーク
+  memo: 徒歩13分
+- type: map
+  title: びいどろ月岡店手造りガラス
+  query: 新潟県新発田市月岡１１０９ びいどろ月岡店手造りガラス
+  memo: 徒歩13分
+- type: map
+  title: カリオン文化館
+  query: 新潟県新発田市月岡温泉８２７ カリオン文化館
+  memo: 徒歩13分
+- type: map
+  title: 足湯
+  query: 新潟県新発田市月岡温泉５５２−２２ 月姫広場
+  memo: 徒歩5分
