@@ -50,7 +50,7 @@ sessioncache.list.each do |session|
   paperlist = []
   session[:paper].each do |paper|
     fpaper = {"title" => paper[:title], "psid" => paper[:psid],
-      "paperid" => paper[:id]}
+      "paperid" => paper[:id], "pagenum" => paper[:pagenum]}
     pid = paper[:id]
     if papercache.bynumber(pid) then
       paperitem = papercache.bynumber(pid)

@@ -51,8 +51,8 @@ class SessionCache
         year = myear.to_i
         month = mmonth.to_i
         day = mday.to_i
-        printf "%d/%d/%d", year, month, day
-        puts
+#        printf "%d/%d/%d", year, month, day
+#        puts
         next
       elsif /^(?<sid>[\dA-Z]+)\s(?<title>.+)/ =~ str then
         # セッション情報
@@ -93,6 +93,9 @@ class SessionCache
           paper = {}
           paper[:sessionid] = ssid
           paper[:psid] = row[0]
+          if /^p\.\s*(?<pagenum>\d+)/ =~ row[2] then
+            paper[:pagenum] = pagenum
+          end
           paper[:id] = row[3]
           # タイトル
           row = reader.shift
