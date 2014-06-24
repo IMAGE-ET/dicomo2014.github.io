@@ -17,6 +17,7 @@ layout: event
 {% endif %}{% endfor %}
 {{paper.psid}}: {{paper.title}}</h3>
 <p>{{paper.title}}</p>
+<a class="pdflink" rel="external" href="/pdf/p{{paper.pagenum}}_{{paper.psid}}.pdf" data-role="button" style="display:none;">論文PDFを開く</a>
 <blockquote>
 {% if paper.abstract %}{{paper.abstract}}
 {% else %}アブストラクト非公開
@@ -36,3 +37,13 @@ layout: event
 {% endfor %}
 
 {% include favorite-list.html storage="favpeople" pageid=page.pageid %}
+<script>
+if (window.localStorage && window.localStorage.getItem("pdflinkpath")) {
+  var pdflinkpath = window.localStorage.getItem("pdflinkpath");
+  $(".pdflink").each(function(){
+    $(this).css("display", "block");
+    var link = $(this).attr("href");
+    $(this).attr("href", pdflinkpath + link);
+  });
+}
+</script>

@@ -21,6 +21,9 @@ layout: default
    <ul data-role="listview">
     <li><a id="buttonqrcode-{{page.pageid}}" data-rel="popup">QRコード表示</a></li>
    </ul>
+   <h4>論文集のパス</h4>
+   <small>CD-ROMイメージのindex.htmlのあるパスを入力するとPDFへのリンクが表示されます。</small>
+   <input id="selectpdfpath-{{page.pageid}}" type="text" />
    <a data-rel="close" data-role="button" data-icon="delete">Close</a>
    </div>
   </div>
@@ -33,6 +36,16 @@ layout: default
     $("#qrcodeimg-{{page.pageid}}").html("");
     $("#qrcodeimg-{{page.pageid}}").qrcode($.mobile.path.getLocation());
     $("#popupqrcode-{{page.pageid}}").popup("open");
+  });
+  $("#selectpdfpath-{{page.pageid}}").on("change", function() {
+    var filepath = $(this).val();
+    if (window.localStorage) {
+      if (filepath && filepath != "") {
+        window.localStorage.setItem("pdflinkpath", filepath);
+      } else {
+        window.localStorage.removeItem("pdflinkpath");
+      }
+    }
   });
 </script>
 </div> <!-- page -->
