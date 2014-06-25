@@ -20,12 +20,17 @@ layout: page
 {% for session in page.session %}
 <div data-role="collapsible">
 {% if session.psid %}
-<h3>{{session.role}} : {{ session.psid }} : {{ session.title }}</h3>
+<h3><span class="favstar" id="star-{{session.sessionid}}"></span>
+{{session.role}} : {{ session.psid }} : {{ session.title }}</h3>
 <p>{{ session.psid }} : {{ session.title }}</p>
 {% else %}
-<h3>{{session.role}} : {{ session.sessiontitle }}</h3>
+<h3><span class="favstar" id="star-{{session.sessionid}}"></span>
+{{session.role}} : {{ session.sessiontitle }}</h3>
 {% endif %}
-<a data-role="button" data-icon="arrow-r" data-iconpos="right" href="/session/session-{{ session.sessionid }}/">{{session.sessiontitle}}: 詳細</a>
+<a data-role="button" data-icon="arrow-r" data-iconpos="right" href="/session/session-{{ session.sessionid }}/">
+<span class="favstar" id="star-{{session.sessionid}}"></span>
+{{session.sessiontitle}}: 詳細</a>
 </div>
 {% endfor %}
 {% endif %}
+{% include favorite-list.html storage="favevent" pageid=page.pageid %}
