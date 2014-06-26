@@ -87,7 +87,9 @@ class PersonCache
     end
 
     def public?
-      if self.comment or @papercache.byauthor(self.name) or @sessioncache.bychair(self.name) then
+      if self.comment and self.comment.strip.length > 0 then
+        true
+      elsif @papercache.byauthor(self.name) or @sessioncache.bychair(self.name) then
         true
       elsif self.alias and (@papercache.byauthor(self.alias) or @sessioncache.bychair(self.alias)) then
         true
