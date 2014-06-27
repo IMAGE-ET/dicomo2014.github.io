@@ -15,8 +15,8 @@ class SessionCache
     @author = {}
     @number = {}
     @chair = {}
-    reader = CSV.open($session_data_file, "rt",
-                      {:encoding=>"cp932:utf-8", :skip_blanks=>false})
+    reader = CSV.open($session_data_file, "rt:cp932:utf-8",
+                      {:skip_blanks=>false})
     puts "reading session file: " + $session_data_file
     detail = false
     year = 0

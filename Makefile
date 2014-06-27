@@ -17,7 +17,16 @@ genpeople:
 	$(RUBY) $(SCRIPTDIR)/genpeople.rb
 
 genpresenterlist:
-	$(RUBY) $(SCRIPTDIR)/genpresenterlist.rb | grep -v 'reading' | iconv -t cp932 > _data/presenter_list.csv
+	$(RUBY) $(SCRIPTDIR)/genpresenterlist.rb
+
+genpeoplepubliclist:
+	$(RUBY) $(SCRIPTDIR)/genpeoplepubliclist.rb
+
+genpeopleqrcode:
+	$(RUBY) $(SCRIPTDIR)/genpeopleqrcode.rb
+
+gensessionqrcode:
+	$(RUBY) $(SCRIPTDIR)/gensessionqrcode.rb
 
 checkall:\
 	checkchair\

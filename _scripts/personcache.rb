@@ -18,7 +18,7 @@ class PersonCache
     @number = {}
     @chair = {}
     @index = -1
-    reader = CSV.open($person_data_file, "rt", {:encoding=>"cp932:utf-8", :skip_blanks=>false})
+    reader = CSV.open($person_data_file, "rt:cp932:utf-8", {:skip_blanks=>false})
     puts "reading person file: " + $person_data_file
     @header = reader.shift
     reader.each do |row|

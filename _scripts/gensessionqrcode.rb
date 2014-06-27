@@ -10,21 +10,19 @@ require './_scripts/papercache.rb'
 require './_scripts/sessioncache.rb'
 require './_scripts/personcache.rb'
 
-$presenter_list = "_data/presenter_list.csv"
+$output_folder = "_data"
+$qrcode_script = "bash _scripts/genqrcode.sh"
+$dicomo_site = "http://dicomo2014.github.io/session/"
 
 papercache = PaperCache.new
 sessioncache = SessionCache.new
 personcache = PersonCache.new(papercache, sessioncache)
 
-CSV.open($presenter_list, "wb:cp932") do |writer|
-  sessioncache.list.each do |session|
-    session[:paper].each do |paper|
-      psid = paper[:psid]
-      paper[:author].each do |author|
-        if author[:presenter] then
-          writer << [psid, author[:name]]
-        end
-      end
-    end
-  end
+sessioncache.list.each do |session|
+
+  id = session[:id]
+  file = "session-" + id + ".png"
+  url = $dicomo_site + "session-" + id + "/"
+  
+  system($qrcode_script + " " + $output_folder + "/" + file + " " + url);
 end
