@@ -20,7 +20,7 @@ sessioncache.list.each do |session|
     psid = paper[:psid]
     paper[:author].each do |author|
       if author[:presenter] then
-        puts psid + "," + author[:name]
+        puts "" + psid + "," + author[:name]
       end
     end
   end

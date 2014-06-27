@@ -16,8 +16,8 @@ genpeople:
 	mkdir -v _posts/people
 	$(RUBY) $(SCRIPTDIR)/genpeople.rb
 
-gensessionlist:
-	$(RUBY) $(SCRIPTDIR)/gensessionlist.rb
+genpresenterlist:
+	$(RUBY) $(SCRIPTDIR)/genpresenterlist.rb | grep -v 'reading' | iconv -t cp932 > _data/presenter_list.csv
 
 checkall:\
 	checkchair\
