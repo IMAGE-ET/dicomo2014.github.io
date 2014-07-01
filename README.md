@@ -37,6 +37,10 @@ DICOMOシンポジウム用に作成していますが、
 
 * [DICOMO 2014 Mobile site source](https://github.com/dicomo2014/dicomo2014.github.io)
 
+詳細につきましては、以下のPDFをご覧ください。
+
+* [HTML5を用いたシンポジウム向けモバイルサイトの構築(PDF)](http://dicomo.org/wp-content/uploads/2014/06/dicomobile-20140626.pdf)
+
 ## ライセンス
 
 元になっているJekyllのテンプレートはMIT Licenseとします。

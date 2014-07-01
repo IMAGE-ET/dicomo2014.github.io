@@ -18,7 +18,8 @@ CACHE MANIFEST
 /js/jquery.touchpanview.js
 /js/jquery.mobile-events.min.js
 /images/touchpanview-pin.png
-{{site.roommap.imageurl}}
+{% if site.roommap.imageurl %}{{site.roommap.imageurl}}{% endif %}
+{% if site.logo %}{{site.logo}}{% endif %}
 //code.jquery.com/jquery-2.1.1.min.js
 //code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css
 //code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js

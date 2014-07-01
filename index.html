@@ -2,6 +2,9 @@
 layout: page
 title: Home
 ---
+<h2>
+{% if site.logo %}<img src="{{site.logo}}" />{% endif %}
+{{site.title}}</h2>
 <h2>新着情報</h2>
 <ul data-role="listview">
   {% for post in site.categories.news %}

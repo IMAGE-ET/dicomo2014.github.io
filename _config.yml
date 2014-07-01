@@ -1,4 +1,5 @@
 name: DICOMO2014 Mobile
+title: マルチメディア、分散、協調とモバイル(DICOMO2014)シンポジウム
 permalink: /:categories/:title/
 #markdown: redcarpet
 markdown: kramdown
@@ -8,6 +9,7 @@ encoding: utf-8
 author:
   name: DICOMO2014実行委員会
   email: dicomo2014-inquiry@dicomo.org
+logo: /images/dicomo2014-logo-icon.png
 
 site_url: http://dicomo2014.github.io
 
