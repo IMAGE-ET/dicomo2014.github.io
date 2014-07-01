@@ -20,10 +20,11 @@ personcache = PersonCache.new(papercache, sessioncache)
 
 personcache.list.each do |person|
   unless person.public? then
-    puts "not public: " + person.id
+    puts "not public: #{person.id}"
+    system("cp null.png #{person.id}.png")
     next
   end
 
-  system($qrcode_script + " " + $output_folder + "/" + person.id + ".png " +
-         $dicomo_site + person.id + "/");
+  system("#{$qrcode_script} #{$output_folder}/#{person.id}.png " +
+         "#{$dicomo_site}#{person.id}/");
 end
