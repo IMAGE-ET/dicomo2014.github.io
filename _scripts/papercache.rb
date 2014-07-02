@@ -79,8 +79,8 @@ class PaperCache
 
     # 論文集発行日以降に変更
     def right?
-      /常に許可$/ =~ @row[14]
-#      not /不許可$/ =~ row[14]
+#      /常に許可$/ =~ @row[14]
+      not /不許可$/ =~ @row[14]
     end
 
     def reject?
