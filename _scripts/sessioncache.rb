@@ -15,6 +15,7 @@ class SessionCache
     @author = {}
     @number = {}
     @chair = {}
+    @psid = {}
     reader = CSV.open($session_data_file, "rt:cp932:utf-8",
                       {:skip_blanks=>false})
     puts "reading session file: " + $session_data_file
@@ -117,6 +118,7 @@ class SessionCache
           end #author
           paper[:author] = authorlist
           paperlist << paper
+          @psid[paper[:psid]] = paper
         end #paper
         item[:paper] = paperlist
         @list << item
@@ -135,5 +137,9 @@ class SessionCache
 
   def bynumber(num)
     @number[num]
+  end
+
+  def bypsid(psid)
+    @psid[psid]
   end
 end
