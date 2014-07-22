@@ -29,6 +29,10 @@ layout: default
 <a href="#" data-rel="back" data-role="button">Close</a>
 </div>
 <script>
+  $(document).on("mobileinit", function() {
+    $.mobile.ajaxEnabled = false;
+    $.mobile.pushStateEabled = false;
+  });
   $("#buttonqrcode-{{page.pageid}}").on("click", function() {
     $("#qrcodeimg-{{page.pageid}}").html("");
     $("#qrcodeimg-{{page.pageid}}").qrcode($.mobile.path.getLocation());
